@@ -1,22 +1,16 @@
-<div align="center">
+# [stagecraft.ing](https://stagecraft.ing) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Encore.ts](https://img.shields.io/badge/Encore.ts-554BF7?style=for-the-badge&logo=encore&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Spec Spine Intent Evolution](profile/artifacts/stagecraft-github-banner.jpg)
 
-# stagecraft.ing
+<div align="center">
 
 ### Governed software delivery for the agentic era
 
 **AI can write the code. The unsolved problem is trusting what it wrote.**
 
-We build the machinery that makes machine-generated change *auditable*: the human
-authors the contract, agents do the work, and gates (not optimism) refuse anything
-that drifts from the contract. Stop reviewing output; start constraining intent.
-
-<br />
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Encore.ts](https://img.shields.io/badge/Encore.ts-554BF7?style=for-the-badge&logo=encore&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+We build the machinery that makes machine-generated change *auditable*: <br /> 
+the human authors the contract, agents do the work, and gates (not optimism) refuse anything
+that drifts from the contract. <br />
+Stop reviewing output; start constraining intent.
 
 </div>
 
