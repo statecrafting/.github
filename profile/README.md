@@ -1,5 +1,5 @@
-# [stagecraft.ing](https://stagecraft.ing) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Encore.ts](https://img.shields.io/badge/Encore.ts-554BF7?style=for-the-badge&logo=encore&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Spec Spine Intent Evolution](artifacts/stagecraft-github-banner.jpg)
+# [statecraft.ing](https://statecraft.ing) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Encore.ts](https://img.shields.io/badge/Encore.ts-554BF7?style=for-the-badge&logo=encore&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Spec Spine Intent Evolution](artifacts/statecraft-github-banner.jpg)
 
 <div align="center">
 
@@ -46,7 +46,7 @@ all the way to a governed, self-auditing platform running in your own cloud.
 
 ### The platform
 
-#### [open-agentic-platform](https://github.com/stagecraft-ing/open-agentic-platform)
+#### [open-agentic-platform](https://github.com/statecrafting/open-agentic-platform)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue?style=flat-square)
 ![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square&logo=rust)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -63,7 +63,7 @@ control plane (identity, policy, approvals, deployments, audit).
 
 ### The factory
 
-#### [factory-encore](https://github.com/stagecraft-ing/factory-encore)
+#### [factory-encore](https://github.com/statecrafting/factory-encore)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
@@ -74,7 +74,7 @@ Business documents go in; a frozen, technology-free Build Specification comes ou
 an adapter turns that specification into a running application. The process layer
 never names a framework; add a stack by adding an adapter.
 
-#### [template-encore](https://github.com/stagecraft-ing/template-encore)
+#### [template-encore](https://github.com/statecrafting/template-encore)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green?style=flat-square)
 ![Vue](https://img.shields.io/badge/-Vue%203-42b883?style=flat-square&logo=vuedotjs&logoColor=white)
 ![Encore.ts](https://img.shields.io/badge/-Encore.ts-554BF7?style=flat-square)
@@ -88,7 +88,7 @@ the generator can never silently diverge from the baseline it targets.
 
 ### The tenant toolkit
 
-#### [tenant-emit](https://github.com/stagecraft-ing/tenant-emit)
+#### [tenant-emit](https://github.com/statecrafting/tenant-emit)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green?style=flat-square)
 ![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square&logo=rust)
 
@@ -97,7 +97,7 @@ An emit-only CLI a produced application pins to build a signed
 SHA-256 every artifact, lift the frozen Build Spec hash, attach an attributable
 signer, and write a self-authenticating certificate. Identity-bearing and offline.
 
-#### [tenant-tail](https://github.com/stagecraft-ing/tenant-tail)
+#### [tenant-tail](https://github.com/statecrafting/tenant-tail)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green?style=flat-square)
 ![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square&logo=rust)
 
@@ -110,7 +110,7 @@ produces it.
 
 ### The primitive
 
-#### [spec-spine](https://github.com/stagecraft-ing/spec-spine)
+#### [spec-spine](https://github.com/statecrafting/spec-spine)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green?style=flat-square)
 ![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square&logo=rust)
 [![crates.io](https://img.shields.io/badge/crates.io-spec--spine--cli-orange?style=flat-square&logo=rust)](https://crates.io/crates/spec-spine-cli)
@@ -126,7 +126,7 @@ own spec corpus in CI.
 
 ### Day-zero operations
 
-#### [oap-bootstrap](https://github.com/stagecraft-ing/oap-bootstrap)
+#### [oap-bootstrap](https://github.com/statecrafting/oap-bootstrap)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green?style=flat-square)
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
@@ -154,6 +154,6 @@ anywhere.
 Built in the open from Edmonton, Canada by [**@bartekus**](https://github.com/bartekus)
 and a fleet of governed agents, which is rather the point.
 
-**[bartekus.com](https://bartekus.com)** · **[the platform ↗](https://github.com/stagecraft-ing/open-agentic-platform)**
+**[bartekus.com](https://bartekus.com)** · **[the platform ↗](https://github.com/statecrafting/open-agentic-platform)**
 
 </div>
