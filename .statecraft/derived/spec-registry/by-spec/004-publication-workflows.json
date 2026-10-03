@@ -41,7 +41,7 @@
       }
     ],
     "id": "004-publication-workflows",
-    "implementation": "in-progress",
+    "implementation": "complete",
     "sectionDigests": {
       "1-verification": "777344ccbc8aa5350fb0a7003bb3826ce02c031675f35e644f80ea5b42a0d19f",
       "2-deployment": "85d5033edb0fe0b8c0b39400130b20a61df06bb2647df5d52e3c6ff19b1767dc",
@@ -59,6 +59,6 @@
     "summary": "Reproducible least-permission verification and single-publisher Pages deployment to the custom domain.",
     "title": "Verification and GitHub Pages publication"
   },
-  "shardHash": "4aebde00c164be4f89ee0da5d5b4e097b1a1709585d68442eb1815ddcfd6481c",
+  "shardHash": "f6d15cb2335a10b8ad20c79f961dbf53c93769c4dba86c7432932b8586e894dc",
   "specVersion": "1.9.0"
 }

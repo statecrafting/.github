@@ -131,3 +131,37 @@ read-only token to avoid shared anonymous API quotas. Every source also passes
 an anonymous Git access check with global Git configuration and credential
 helpers disabled. The metadata token is removed from source subprocesses.
 No private source token or private corpus access is provided.
+
+## Live delivery receipt
+
+Observed 2026-10-03 at 22:05 UTC. The public organization profile renders its
+introduction and website, catalog and getting-started links. The apex serves
+this repository's intended static artifact over valid HTTPS. HTTP and
+`www.statecraft.ing` redirect to `https://statecraft.ing/`; HTTPS is enforced.
+
+Delivered main revision: `12a3d979c1da919043335c2e64a4de5c6d8d26c9`.
+
+- [Exact implementation-head verification](https://github.com/statecrafting/.github/actions/runs/37156181548) passed.
+- [Exact hardening-head verification](https://github.com/statecrafting/.github/actions/runs/37156753097) and CodeQL passed.
+- [Delivered-main verification](https://github.com/statecrafting/.github/actions/runs/37156850945) passed.
+- [Production publication, attempt 2](https://github.com/statecrafting/.github/actions/runs/37156850956/attempts/2) passed both build and deployment.
+
+Live Chromium checks passed HTTPS loading, all twelve repository routes and
+one specification detail per repository, the main reading/product routes,
+a pinned detail link and refresh, unknown-spec refusal, mobile navigation,
+theme persistence and narrow layout. No page errors were observed. The live
+payload contains 336 specifications from twelve immutable public revisions.
+This qualifies the public website delivery, not those products' deployments.
+
+The initial publication was cancelled after a stalled API guard. Its corrected
+successor's first attempt was cancelled after stalled runtime setup, and its
+second attempt completed. The current workflow retains pinned setup-node;
+no alternative runtime installer was adopted. Public source and presentation
+pins remain unchanged. Deployment identifiers, source payload comparison,
+local review records and live probe receipts are retained in ignored state.
+
+Rollback uses a reviewed revert on main followed by a fresh verified deployment.
+The current-main guard intentionally refuses historical artifacts. Source-pin
+updates are reviewed manifest changes. Initial ingestion still exports metadata,
+headings and frozen anchors; full text remains available at pinned public
+markdown links. No private-platform export or hosted sign-in target is published.
