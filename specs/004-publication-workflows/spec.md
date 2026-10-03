@@ -2,7 +2,7 @@
 id: "004-publication-workflows"
 title: "Verification and GitHub Pages publication"
 status: approved
-implementation: in-progress
+implementation: complete
 created: "2026-10-03"
 summary: "Reproducible least-permission verification and single-publisher Pages deployment to the custom domain."
 depends_on:

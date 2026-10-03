@@ -2,7 +2,7 @@
 id: "003-public-catalog"
 title: "Pinned public catalog ingestion and publication boundary"
 status: approved
-implementation: in-progress
+implementation: complete
 created: "2026-10-03"
 summary: "Deterministic public-source exports through supported pinned spec-spine commands, preserving provenance and authority limits."
 depends_on:

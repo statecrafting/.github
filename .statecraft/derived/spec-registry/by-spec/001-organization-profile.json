@@ -11,7 +11,7 @@
       }
     ],
     "id": "001-organization-profile",
-    "implementation": "in-progress",
+    "implementation": "complete",
     "sectionDigests": {
       "1-behavior": "43917efbf109344fda4c115cb5b39f192c3ab85a25c1d3fd51c9ec8b691636c5",
       "2-acceptance": "7d8eb4fac506e3fd0357222aaca37c5d1043138cad3a907763373603f9ef1925",
@@ -29,6 +29,6 @@
     "summary": "An accessible public organization introduction linking the website and current public family resources.",
     "title": "Public organization profile"
   },
-  "shardHash": "715f39e6ea8e63966c83eba292931bab9881442c7210774c3ce9550d37e70052",
+  "shardHash": "a7e96ea939cc7202eb3affddf85c3b58e1ee5ae41772b9b0f28aa08c92028fc9",
   "specVersion": "1.9.0"
 }

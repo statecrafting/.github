@@ -43,7 +43,7 @@
       }
     ],
     "id": "002-static-frontend",
-    "implementation": "in-progress",
+    "implementation": "complete",
     "sectionDigests": {
       "1-architecture-and-routes": "07075b89064bea7a0e327162c8d92217fc628bf1181ac94757c6d89926bd99f9",
       "2-honest-content": "3b5b289f19a84f346a9035a638a588d42492c68a6987025f39f0c2c53a8b41d3",
@@ -63,6 +63,6 @@
     "summary": "A static accessible website with current claims, catalog routes, reading controls, themes and architecture explanations.",
     "title": "Static public frontend and reading surfaces"
   },
-  "shardHash": "ac57f4653fd90ab4f898a3a7c0468a058f6706ac08772f85ff1b6ab4c753583a",
+  "shardHash": "4dec1bd7ed6d979fc4055137059b3925fc4c7ee31445309c34a03dcaf0ef4304",
   "specVersion": "1.9.0"
 }
