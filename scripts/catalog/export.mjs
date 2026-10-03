@@ -5,7 +5,9 @@ import { validateManifest, normalize, validateCatalog, serialize, assertSourceSt
 const manifest = JSON.parse(readFileSync('catalog/sources.json', 'utf8'));
 validateManifest(manifest);
 const spine = process.env.SPEC_SPINE_BIN || 'spec-spine';
-const run = (bin, args, cwd) => execFileSync(bin, args, { cwd, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } }).trim();
+const { GH_PUBLIC_METADATA_TOKEN, ...publicEnvironment } = process.env;
+const metadataHeaders = { 'User-Agent': 'statecrafting-public-catalog', 'Accept': 'application/vnd.github+json', ...(GH_PUBLIC_METADATA_TOKEN ? { Authorization: `Bearer ${GH_PUBLIC_METADATA_TOKEN}` } : {}) };
+const run = (bin, args, cwd) => execFileSync(bin, args, { cwd, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, stdio: ['ignore', 'pipe', 'pipe'], env: { ...publicEnvironment, GIT_TERMINAL_PROMPT: '0', GIT_CONFIG_NOSYSTEM: '1', GIT_CONFIG_GLOBAL: '/dev/null' } }).trim();
 if (run(spine, ['--version']) !== 'spec-spine 0.28.0') throw new Error('Wrong spec-spine producer');
 const cache = resolve('.statecraft/state/catalog-sources');
 mkdirSync(cache, { recursive: true });
@@ -14,7 +16,7 @@ for (const source of manifest.sources) {
   let response;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      response = await fetch(`https://api.github.com/repos/${source.repository}`, { signal: AbortSignal.timeout(20000), headers: { 'User-Agent': 'statecrafting-public-catalog', 'Accept': 'application/vnd.github+json' } });
+      response = await fetch(`https://api.github.com/repos/${source.repository}`, { signal: AbortSignal.timeout(20000), headers: metadataHeaders });
       if (response.status < 500 || attempt === 2) break;
     } catch (error) { if (attempt === 2) throw error; }
     await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
@@ -24,7 +26,8 @@ for (const source of manifest.sources) {
   if (metadata.private !== false || metadata.full_name !== source.repository) throw new Error('Private or redirected source refused');
   const dir = resolve(cache, source.repository.split('/')[1]);
   if (!existsSync(dir)) { mkdirSync(dir); run('git', ['init', '-q'], dir); }
-  const git = args => run('git', ['-c', 'credential.helper=', '-c', 'core.hooksPath=/dev/null', ...args], dir);
+  const git = args => run('git', ['-c', 'credential.helper=', '-c', 'http.extraHeader=', '-c', 'core.hooksPath=/dev/null', ...args], dir);
+  git(['ls-remote', '--exit-code', `https://github.com/${source.repository}.git`, 'HEAD']);
   if (!existsSync(resolve(dir, `.git/catalog-${source.revision}`))) {
     git(['fetch', '--depth=1', `https://github.com/${source.repository}.git`, source.revision]);
     writeFileSync(resolve(dir, `.git/catalog-${source.revision}`), 'fetched\n');
