@@ -44,9 +44,9 @@
     "implementation": "in-progress",
     "sectionDigests": {
       "1-verification": "777344ccbc8aa5350fb0a7003bb3826ce02c031675f35e644f80ea5b42a0d19f",
-      "2-deployment": "3ecf90638106f460f7efca135509c40d67783955e205463f15f8332f9a4465b2",
+      "2-deployment": "85d5033edb0fe0b8c0b39400130b20a61df06bb2647df5d52e3c6ff19b1767dc",
       "owner-ratification": "c998fe1e62934f6bf1c285bf3e2a42ba034b8da88c7a55f686dbe663372c935c",
-      "verification-and-github-pages-publication": "ee6998e11f8dc918f5f01c6283999309da0ff869e1c435ac8c033e8e328019a1"
+      "verification-and-github-pages-publication": "c97a6a6208fd0ec037ac9f27e38cd3f86da7bff99869bdc1bb3a1809db6b6cfc"
     },
     "sectionHeadings": [
       "Verification and GitHub Pages publication",
@@ -59,6 +59,6 @@
     "summary": "Reproducible least-permission verification and single-publisher Pages deployment to the custom domain.",
     "title": "Verification and GitHub Pages publication"
   },
-  "shardHash": "5c00ab5ce9f6fd07e06067abdf9fd475c170b54626556799093ea04602a9bc6c",
+  "shardHash": "4aebde00c164be4f89ee0da5d5b4e097b1a1709585d68442eb1815ddcfd6481c",
   "specVersion": "1.9.0"
 }

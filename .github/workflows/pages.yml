@@ -44,6 +44,7 @@ jobs:
         with:
           path: build/client
   deploy:
+    timeout-minutes: 5
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -56,11 +57,10 @@ jobs:
     steps:
       - name: Refuse a superseded commit
         env:
-          GH_TOKEN: ${{ github.token }}
           EXPECTED_SHA: ${{ github.sha }}
           REPOSITORY: ${{ github.repository }}
         run: |
-          current_sha=$(gh api "repos/$REPOSITORY/commits/main" --jq .sha)
+          current_sha=$(curl --fail --silent --show-error --max-time 20 --retry 2 --retry-delay 2 --retry-max-time 70 "https://api.github.com/repos/$REPOSITORY/commits/main" | jq -er .sha)
           test "$current_sha" = "$EXPECTED_SHA"
       - name: Deploy
         id: deployment

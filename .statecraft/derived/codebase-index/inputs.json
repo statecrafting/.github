@@ -1,7 +1,7 @@
 {
   "inputs": {
     ".github/workflows/pages.yml": {
-      "contentHash": "dd91aacc006b676904dd1bf87ab9ed80121017b2f681e7a819ef860b4a8f9009"
+      "contentHash": "ada25fca34652b55497e9249cd97475839491e30e00a435dc783d6d819818369"
     },
     ".github/workflows/verify.yml": {
       "contentHash": "3799651ad419d9edae58b45659724a424d5ff7a31cde2ae68e66ba118106bd4c"

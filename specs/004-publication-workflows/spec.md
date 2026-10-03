@@ -42,7 +42,8 @@ Build with read-only contents permission and public corpus access only.
 Upload only the static output directory. The deployment job alone gets
 `pages: write` and `id-token: write`, with the appropriate `github-pages`
 environment. Serialize deployment and prevent older artifacts overtaking a
-newer deployment. Do not grant blanket contents write or private corpus access.
+newer deployment. Bound the current-main public HTTP check and the deployment
+job duration; exhausted retries refuse publication. Do not grant blanket contents write or private corpus access.
 
 Configure `statecraft.ing` after verifying existing DNS and publisher ownership.
 Do not create a competing organization Pages repository. Recheck hostname,
