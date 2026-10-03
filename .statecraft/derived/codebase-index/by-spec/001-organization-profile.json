@@ -1,0 +1,32 @@
+{
+  "mapping": {
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "implementingPaths": [
+      {
+        "path": "profile/README.md",
+        "source": "spec-edge"
+      }
+    ],
+    "resolvedUnits": [
+      {
+        "locations": [
+          {
+            "file": "profile/README.md"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "profile/README.md"
+        }
+      }
+    ],
+    "specId": "001-organization-profile",
+    "specStatus": "draft"
+  },
+  "schemaVersion": "1.2.0",
+  "shardHash": "6802dcf4ce43e5c30ddbe67346e2e7726c1df8b96cf0ec48a9d0e3bc7a7e927b"
+}

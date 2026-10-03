@@ -1,0 +1,75 @@
+{
+  "diagnostics": {
+    "errors": [],
+    "warnings": [
+      {
+        "code": "W-001",
+        "message": "spec '003-public-catalog' file unit 'catalog/sources.json' does not exist",
+        "path": "catalog/sources.json"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '003-public-catalog' file unit 'catalog/schema.json' does not exist",
+        "path": "catalog/schema.json"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '003-public-catalog' directory unit 'scripts/catalog/' is not a directory",
+        "path": "scripts/catalog/"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '003-public-catalog' file unit 'tests/catalog.test.mjs' does not exist",
+        "path": "tests/catalog.test.mjs"
+      }
+    ]
+  },
+  "mapping": {
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "implementingPaths": [],
+    "resolvedUnits": [
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "directory",
+          "path": "scripts/catalog/"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "catalog/schema.json"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "catalog/sources.json"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "tests/catalog.test.mjs"
+        }
+      }
+    ],
+    "specId": "003-public-catalog",
+    "specStatus": "draft"
+  },
+  "schemaVersion": "1.2.0",
+  "shardHash": "a9c66fb30f2d9175e4dc647eb0b97ab28330d41635646ad57aeb7a791df8a80d"
+}

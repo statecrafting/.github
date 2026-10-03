@@ -1,0 +1,66 @@
+{
+  "record": {
+    "created": "2026-10-03",
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "establishes": [
+      {
+        "kind": "file",
+        "path": "package.json"
+      },
+      {
+        "kind": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "kind": "file",
+        "path": "tsconfig.json"
+      },
+      {
+        "kind": "file",
+        "path": "vite.config.ts"
+      },
+      {
+        "kind": "file",
+        "path": "react-router.config.ts"
+      },
+      {
+        "kind": "directory",
+        "path": "app/"
+      },
+      {
+        "kind": "directory",
+        "path": "public/"
+      },
+      {
+        "kind": "file",
+        "path": "tests/site.spec.ts"
+      },
+      {
+        "kind": "file",
+        "path": "playwright.config.ts"
+      }
+    ],
+    "id": "002-static-frontend",
+    "implementation": "pending",
+    "sectionDigests": {
+      "1-architecture-and-routes": "07075b89064bea7a0e327162c8d92217fc628bf1181ac94757c6d89926bd99f9",
+      "2-honest-content": "3b5b289f19a84f346a9035a638a588d42492c68a6987025f39f0c2c53a8b41d3",
+      "3-route-integrity-and-acceptance": "8e137396f762272971b0fa09357ae6ae4e2796f4f5f4f6ef83485bd7eef42715",
+      "static-public-frontend-and-reading-surfaces": "5b1abdda8242e5615950106eca74ea8248f85d2e40e1eb43084cd5d9a0d9def4"
+    },
+    "sectionHeadings": [
+      "Static public frontend and reading surfaces",
+      "1. Architecture and routes",
+      "2. Honest content",
+      "3. Route integrity and acceptance"
+    ],
+    "specPath": "specs/002-static-frontend/spec.md",
+    "status": "draft",
+    "summary": "A static accessible website with current claims, catalog routes, reading controls, themes and architecture explanations.",
+    "title": "Static public frontend and reading surfaces"
+  },
+  "shardHash": "9ec56abbfc58d9a3e91e1165345f2f52be8e3d3fe50d3b6089ec698fb51724f1",
+  "specVersion": "1.9.0"
+}

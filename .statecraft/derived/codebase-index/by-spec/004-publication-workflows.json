@@ -1,0 +1,89 @@
+{
+  "diagnostics": {
+    "errors": [],
+    "warnings": [
+      {
+        "code": "W-001",
+        "message": "spec '004-publication-workflows' file unit '.github/workflows/verify.yml' does not exist",
+        "path": ".github/workflows/verify.yml"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '004-publication-workflows' file unit '.github/workflows/pages.yml' does not exist",
+        "path": ".github/workflows/pages.yml"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '004-publication-workflows' file unit 'scripts/verify-site.mjs' does not exist",
+        "path": "scripts/verify-site.mjs"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '004-publication-workflows' file unit 'scripts/install-spec-spine.sh' does not exist",
+        "path": "scripts/install-spec-spine.sh"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '004-publication-workflows' file unit '.node-version' does not exist",
+        "path": ".node-version"
+      }
+    ]
+  },
+  "mapping": {
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "implementingPaths": [],
+    "resolvedUnits": [
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": ".github/workflows/pages.yml"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": ".github/workflows/verify.yml"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": ".node-version"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "scripts/install-spec-spine.sh"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "scripts/verify-site.mjs"
+        }
+      }
+    ],
+    "specId": "004-publication-workflows",
+    "specStatus": "draft"
+  },
+  "schemaVersion": "1.2.0",
+  "shardHash": "1a47b5ab320be92817f84e91df2a0ecf9cf1d405a6c09a4294f1d99eb6ed3cad"
+}

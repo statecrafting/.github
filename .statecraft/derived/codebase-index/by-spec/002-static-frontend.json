@@ -1,0 +1,145 @@
+{
+  "diagnostics": {
+    "errors": [],
+    "warnings": [
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' file unit 'package.json' does not exist",
+        "path": "package.json"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' file unit 'package-lock.json' does not exist",
+        "path": "package-lock.json"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' file unit 'tsconfig.json' does not exist",
+        "path": "tsconfig.json"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' file unit 'vite.config.ts' does not exist",
+        "path": "vite.config.ts"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' file unit 'react-router.config.ts' does not exist",
+        "path": "react-router.config.ts"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' directory unit 'app/' is not a directory",
+        "path": "app/"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' directory unit 'public/' is not a directory",
+        "path": "public/"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' file unit 'tests/site.spec.ts' does not exist",
+        "path": "tests/site.spec.ts"
+      },
+      {
+        "code": "W-001",
+        "message": "spec '002-static-frontend' file unit 'playwright.config.ts' does not exist",
+        "path": "playwright.config.ts"
+      }
+    ]
+  },
+  "mapping": {
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "implementingPaths": [],
+    "resolvedUnits": [
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "directory",
+          "path": "app/"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "directory",
+          "path": "public/"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "package-lock.json"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "package.json"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "playwright.config.ts"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "react-router.config.ts"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "tests/site.spec.ts"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "tsconfig.json"
+        }
+      },
+      {
+        "locations": [],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "vite.config.ts"
+        }
+      }
+    ],
+    "specId": "002-static-frontend",
+    "specStatus": "draft"
+  },
+  "schemaVersion": "1.2.0",
+  "shardHash": "9ec56abbfc58d9a3e91e1165345f2f52be8e3d3fe50d3b6089ec698fb51724f1"
+}

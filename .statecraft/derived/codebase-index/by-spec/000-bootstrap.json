@@ -1,0 +1,97 @@
+{
+  "mapping": {
+    "implementingPaths": [
+      {
+        "path": ".gitignore",
+        "source": "spec-edge"
+      },
+      {
+        "path": "AGENTS.md",
+        "source": "spec-edge"
+      },
+      {
+        "path": "docs/public-frontend-adoption.md",
+        "source": "spec-edge"
+      },
+      {
+        "path": "spec-spine.toml",
+        "source": "spec-edge"
+      },
+      {
+        "path": "standards/spec/",
+        "source": "spec-edge"
+      }
+    ],
+    "resolvedUnits": [
+      {
+        "locations": [
+          {
+            "file": "standards/spec/"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "directory",
+          "path": "standards/spec/"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": ".gitignore"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": ".gitignore"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "AGENTS.md"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "AGENTS.md"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "docs/public-frontend-adoption.md"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "docs/public-frontend-adoption.md"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "spec-spine.toml"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "spec-spine.toml"
+        }
+      }
+    ],
+    "specId": "000-bootstrap",
+    "specStatus": "draft"
+  },
+  "schemaVersion": "1.2.0",
+  "shardHash": "45f40de34c43d566bb0c225398f5173a9f2a51231ab8db3c74c6f64b21c51302"
+}
