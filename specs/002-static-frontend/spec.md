@@ -2,7 +2,7 @@
 id: "002-static-frontend"
 title: "Static public frontend and reading surfaces"
 status: approved
-implementation: pending
+implementation: in-progress
 created: "2026-10-03"
 summary: "A static accessible website with current claims, catalog routes, reading controls, themes and architecture explanations."
 depends_on:

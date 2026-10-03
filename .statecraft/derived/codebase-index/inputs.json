@@ -1,19 +1,130 @@
 {
   "inputs": {
+    ".github/workflows/pages.yml": {
+      "contentHash": "dd91aacc006b676904dd1bf87ab9ed80121017b2f681e7a819ef860b4a8f9009"
+    },
+    ".github/workflows/verify.yml": {
+      "contentHash": "3799651ad419d9edae58b45659724a424d5ff7a31cde2ae68e66ba118106bd4c"
+    },
     ".gitignore": {
-      "contentHash": "81478db71ea7ba7c3e6aaeceaff010e972fb0c7a9b1ffc09555ec01cc51bf1a6"
+      "contentHash": "98a818a7b996c527955c4f398b3024c4b6e000cbfa59f153747adf0358242ad5"
+    },
+    ".node-version": {
+      "contentHash": "e71de83088bc182b50b2d1b79953a04d2df1b6031a55de9d11c2ef071a1fa9f4"
     },
     "AGENTS.md": {
       "contentHash": "289230d34f1292a9399482f723625a9bf5037300277f26f63a4f19cdaf265fff"
     },
+    "app/app.css": {
+      "contentHash": "25c8e03152c897a0b333ef71535dba6b11add2b9f3dcb55250d723999cc26c4c"
+    },
+    "app/components/architecture.tsx": {
+      "contentHash": "f0b3a4cf3d9fbd467a3a3cb0050fa44dec223cd1d62208992e94aecc7d05303d"
+    },
+    "app/components/reader.tsx": {
+      "contentHash": "e00db9090d1240996f81c62bfff804b3851a36164070f7d9ff61825b710c7bc7"
+    },
+    "app/components/status.tsx": {
+      "contentHash": "5ea880b70c8e223b589a7edf5381340ed529c6db0b4c5900d9f7a1a27480de10"
+    },
+    "app/lib/catalog.server.ts": {
+      "contentHash": "858c5535a68e59dc4eeb2b52fdaf5ad4bd74383d7a639b15a9837a4b825b2294"
+    },
+    "app/lib/catalog.ts": {
+      "contentHash": "2c66b89179a5c6954dbfa95a3cddab11a3fa40521514fcb1009772fafc6b3032"
+    },
+    "app/lib/reading.ts": {
+      "contentHash": "5a309b48c7d47352671c89806df6a7eeadd6708860b88f797948601ce2a08706"
+    },
+    "app/root.tsx": {
+      "contentHash": "7e8bbf655eb15438303ede29b247065a286e0c1fffec2f8c2fe8a9d3f0102c59"
+    },
+    "app/routes.ts": {
+      "contentHash": "014489b74b57ad5d5f81b398888ed3c283ce203984bccfe33b784c23fb8988d3"
+    },
+    "app/routes/doc.tsx": {
+      "contentHash": "b95baaf77f4e29cec222f33d94ebc6da408fc60131950fe8c587ecd5d8b9cb60"
+    },
+    "app/routes/docs.tsx": {
+      "contentHash": "36b689930ad80330acc09cf94a852eddd287679d03fb7b87712be6a58e7268b0"
+    },
+    "app/routes/get-started.tsx": {
+      "contentHash": "636ad64807c2109ead80f84a30d4bea5f3f008fa22ab0524bca2c070535a1be2"
+    },
+    "app/routes/home.tsx": {
+      "contentHash": "6242abfdf37b0abb30fdedc673bdc52c616cedac713e5b36f367b290f51b9f52"
+    },
+    "app/routes/missing.tsx": {
+      "contentHash": "5e93e7cd6f2052b74e6799a8752baf8ace84e39e4fcab97fcf63f20f336c4684"
+    },
+    "app/routes/paper.tsx": {
+      "contentHash": "4cd06a4981e5ca47a17219ce7a428c1f9e39c8139afb8dbb022dfb3ff3cbcbef"
+    },
+    "app/routes/papers.tsx": {
+      "contentHash": "484eca93d7e315c72989d810cc8280b4cc3567214aae60b8fd177fd07a2d321c"
+    },
+    "app/routes/products.tsx": {
+      "contentHash": "aae73c39133b1f1a3562de749322b7bbede50ea0f4981395b317fe8f6cae10e8"
+    },
+    "app/routes/registry.tsx": {
+      "contentHash": "ae201694a87d325e5acecb50dfb7cc06785bad1a5c05cb0649332b8aad959ec2"
+    },
+    "app/routes/repository.tsx": {
+      "contentHash": "8758e3733809a94b6c27bd63fe108a13ec12b5a78d6093eaad4b35fb4b9b5c87"
+    },
+    "app/routes/spec.tsx": {
+      "contentHash": "631cd3048cc55f717498a31658e2bdf6ed80590d857f9297d8e1ec84207b72bb"
+    },
+    "catalog/schema.json": {
+      "contentHash": "986c847d20e3e10389bbe7705dd1660dc6926a2992bfaf45268b66f0829ffc86"
+    },
+    "catalog/sources.json": {
+      "contentHash": "2a68bc686c48eb36a556d030b15bf3d71afa19a6cc5ad745283305278c2db4b4"
+    },
     "docs/public-frontend-adoption.md": {
-      "contentHash": "0d749201cf09944b2322b8f2596fdd9ea4df4161adce5d3a2f086caf14b1e42c"
+      "contentHash": "65a18ab7464b4b0d95941903c5c7eda66570b82f6c4e741dd036eeac451ac63b"
+    },
+    "package-lock.json": {
+      "contentHash": "33485a5be252fa866722e990cd3403c90996513ace5a9c90d265dc77a224041d"
+    },
+    "package.json": {
+      "contentHash": "22fee908775b613430be345804dd2a8bd51fd11ba1b75749892aacb81455dec5"
+    },
+    "playwright.config.ts": {
+      "contentHash": "e6e3cd8e16be9ff873d35d81abe4734d01be927c94b4f0184696f16797dfe1fb"
     },
     "profile/README.md": {
-      "contentHash": "02abc5ec3ceb0a89f89a990c9585b87aff427ce7707157052d99aa3942d1a372"
+      "contentHash": "1c3f029ba5549b1e98c7ea169155ace120a5a9d6dac6446b49ac1305af4c6614"
+    },
+    "public/CNAME": {
+      "contentHash": "844481f2350ddec85ac24089e2d583e111439b862cee617d8135643426358f81"
+    },
+    "public/favicon.svg": {
+      "contentHash": "954a2264d90b17127e6e0534a6feda70496a88e435bd059356d0f4aa9759a5b4"
+    },
+    "public/robots.txt": {
+      "contentHash": "cdfa7c0892cdbfa912f661bdbf027e765f983517ecb3c19d014a49cbcb606505"
+    },
+    "react-router.config.ts": {
+      "contentHash": "b0ba9d1c2d4c6e5ccaf5f5d312804277b14a660e1438178b68438d923d714ea1"
+    },
+    "scripts/catalog/export.mjs": {
+      "contentHash": "5a1781380f8feb5925d20d9d0fa7ef2a5b5c6d9b2cd3ba78da944f6b2bcf8961"
+    },
+    "scripts/catalog/model.mjs": {
+      "contentHash": "af85b4bd0598eddff61f109e58032010bd32e0ae20beeed04bac2fa358acd4c3"
+    },
+    "scripts/install-spec-spine.sh": {
+      "contentHash": "4376415e1fdebb558eda8ac1452731feae198d174fb73c059179ea7df4ec3726"
+    },
+    "scripts/preview.mjs": {
+      "contentHash": "dd8822e0322a1330a3db8ab671402e2e6beeb33527e69ab4aeb9c72a490c751c"
+    },
+    "scripts/verify-site.mjs": {
+      "contentHash": "cd6a84840618cd996065c7f39d901d79082c94e3e4a9f86067dd934faa47e539"
     },
     "spec-spine.toml": {
-      "contentHash": "0ec36de8044696bcd4f25e501e778cfed985afb75a29a8f5d212c317cf39c35d"
+      "contentHash": "9629497b3a501425704b18b34e8694075330cb0bd778b57080cd252942285e10"
     },
     "standards/spec/constitution.md": {
       "contentHash": "a84dc81e5891d6045edd134b66d336ab45fec254fbdad71e33b54e8997e9309b"
@@ -26,6 +137,18 @@
     },
     "standards/spec/templates/spec-template.md": {
       "contentHash": "ff016dd58ed2e6e59fed062a49961c76496b37a7a60d1f321af75b76574eef4f"
+    },
+    "tests/catalog.test.mjs": {
+      "contentHash": "27a53c7f78ff06b935987cacbec43d0ca4948338562f668783d098d4a2dfaa53"
+    },
+    "tests/site.spec.ts": {
+      "contentHash": "00df285432c7ef07d40e80a5ea133f0a6489f98a18d4246b22790685df8ca6d0"
+    },
+    "tsconfig.json": {
+      "contentHash": "9f120db5cf47688fbe2bd41532653e354417213c5f3a37aa2dbbeaecb560b5e0"
+    },
+    "vite.config.ts": {
+      "contentHash": "043a42c65079a81abdea80cddea46e3efd0356785f6de7f928b6ab4033fa1ac4"
     }
   },
   "schemaVersion": "1.2.0"

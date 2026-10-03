@@ -1,0 +1,16 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { validateManifest, validateCatalog, serialize, normalize, expectedRoutes, assertSourceState } from '../scripts/catalog/model.mjs';
+const manifest = JSON.parse(readFileSync('catalog/sources.json', 'utf8'));
+const source = manifest.sources[0];
+const record = { id: '001-example', title: 'Example', summary: 'Bounded claim', status: 'draft', implementation: 'pending', contentHash: 'a'.repeat(64), specPath: 'specs/001-example/spec.md', extraFrontmatter: { secret: 'do not export' } };
+const sample = () => ({ schemaVersion: 1, sources: [{...source,specs:[normalize(source,record,{})]}] });
+test('moving revisions and unsupported producer pins are refused',()=> { validateManifest(manifest); for(const patch of [{revision:'main'},{producer:'0.29.0'},{repository:'statecrafting/statecraft',required:false}]) assert.throws(()=>validateManifest({schemaVersion:1,sources:[{...source,...patch}]})); });
+test('freshness is a requirement, never an implicit repair',()=> { const check={exitCode:0,report:{registry:{fresh:true,validationPassed:true},index:{fresh:true}}}; assertSourceState({meta:{required_version:'=0.28.0'}},check); assert.throws(()=>assertSourceState({meta:{required_version:'=0.28.0'}},{...check,exitCode:1})); assert.throws(()=>assertSourceState({meta:{required_version:'=0.28.0'}},{exitCode:0,report:{registry:{fresh:false,validationPassed:true},index:{fresh:true}}})); });
+test('normalization leaves evidence unknown and excludes arbitrary frontmatter',()=> {const spec=sample().sources[0].specs[0];assert.equal(spec.lifecycle,'draft');assert.equal(spec.implementation,'pending');assert.equal(spec.verification,'unknown');assert.equal(spec.qualification,'unknown');assert.ok(!serialize(spec).includes('do not export'));assert.equal(spec.contentHash,record.contentHash);});
+test('missing data and unknown schema fields fail closed',()=>{assert.throws(()=>validateCatalog({schemaVersion:1,sources:[]}));const data=sample();data.sources[0].specs[0].secret='hidden';assert.throws(()=>validateCatalog(data));});
+test('duplicate identities and missing relationship targets are refused',()=>{const data=sample();data.sources[0].specs.push(data.sources[0].specs[0]);assert.throws(()=>validateCatalog(data));const other=sample();other.sources[0].specs[0].relationships.dependsOn=['999-absent'];assert.throws(()=>validateCatalog(other));});
+test('unpinned and private-source substitutions are refused',()=>{const data=sample();data.sources[0].specs[0].sourceUrl='https://github.com/statecrafting/statecraft/blob/main/spec.md';assert.throws(()=>validateCatalog(data));});
+test('unsafe spec paths are refused',()=>{assert.throws(()=>normalize(source,{...record,specPath:'../private/spec.md'},{}));assert.throws(()=>normalize(source,{...record,id:'../escape'},{}));});
+test('route set covers every repository and spec identity',()=>{const data=sample();const routes=expectedRoutes(data);assert.ok(routes.includes(`/registry/${source.repository.split('/')[1]}/001-example`));assert.ok(routes.includes(`/registry/${source.repository.split('/')[1]}`));assert.equal(routes.length,11);assert.equal(serialize(data),serialize(sample()));});

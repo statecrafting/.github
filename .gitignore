@@ -24,3 +24,12 @@
 #
 #   .statecraft/derived/
 # <<< statecraft managed ignores <<<
+
+node_modules/
+build/
+.react-router/
+public/data/catalog.json
+.bin/
+playwright-report/
+test-results/
+public/sitemap.xml

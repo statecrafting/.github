@@ -1,0 +1,50 @@
+name: Verify public frontend
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - name: Install pinned tools
+        run: |
+          npm ci --ignore-scripts
+          bash scripts/install-spec-spine.sh
+          echo "$GITHUB_WORKSPACE/.bin" >> "$GITHUB_PATH"
+      - name: Check governance
+        run: |
+          spec-spine --version
+          spec-spine lint --fail-on-warn
+          spec-spine check --fail-on-warn --fail-on-unresolved
+          spec-spine index coverage --fail-on-untraced
+      - name: Check pull request coupling
+        if: github.event_name == 'pull_request'
+        run: spec-spine couple --base origin/main
+      - name: Export public catalog twice
+        run: |
+          npm run catalog
+          cp public/data/catalog.json .statecraft/state/catalog-first.json
+          npm run catalog
+          cmp public/data/catalog.json .statecraft/state/catalog-first.json
+      - name: Verify static frontend
+        run: |
+          npm test
+          npm run typecheck
+          npm run build
+          npx playwright install --with-deps chromium
+          npm run test:browser

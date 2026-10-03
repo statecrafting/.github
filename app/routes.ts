@@ -1,0 +1,2 @@
+import { index, route, type RouteConfig } from '@react-router/dev/routes';
+export default [index('routes/home.tsx'), route('products', 'routes/products.tsx'), route('registry', 'routes/registry.tsx'), route('registry/:repo', 'routes/repository.tsx'), route('registry/:repo/:specId', 'routes/spec.tsx'), route('docs', 'routes/docs.tsx'), route('docs/:slug', 'routes/doc.tsx'), route('papers', 'routes/papers.tsx'), route('papers/:slug', 'routes/paper.tsx'), route('get-started', 'routes/get-started.tsx'), route('*', 'routes/missing.tsx')] satisfies RouteConfig;

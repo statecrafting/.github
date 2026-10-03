@@ -1,62 +1,57 @@
 {
-  "diagnostics": {
-    "errors": [],
-    "warnings": [
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' file unit 'package.json' does not exist",
-        "path": "package.json"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' file unit 'package-lock.json' does not exist",
-        "path": "package-lock.json"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' file unit 'tsconfig.json' does not exist",
-        "path": "tsconfig.json"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' file unit 'vite.config.ts' does not exist",
-        "path": "vite.config.ts"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' file unit 'react-router.config.ts' does not exist",
-        "path": "react-router.config.ts"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' directory unit 'app/' is not a directory",
-        "path": "app/"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' directory unit 'public/' is not a directory",
-        "path": "public/"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' file unit 'tests/site.spec.ts' does not exist",
-        "path": "tests/site.spec.ts"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '002-static-frontend' file unit 'playwright.config.ts' does not exist",
-        "path": "playwright.config.ts"
-      }
-    ]
-  },
   "mapping": {
     "dependsOn": [
       "000-bootstrap"
     ],
-    "implementingPaths": [],
+    "implementingPaths": [
+      {
+        "path": "",
+        "source": "manifest-metadata"
+      },
+      {
+        "path": "app/",
+        "source": "spec-edge"
+      },
+      {
+        "path": "package-lock.json",
+        "source": "spec-edge"
+      },
+      {
+        "path": "package.json",
+        "source": "spec-edge"
+      },
+      {
+        "path": "playwright.config.ts",
+        "source": "spec-edge"
+      },
+      {
+        "path": "public/",
+        "source": "spec-edge"
+      },
+      {
+        "path": "react-router.config.ts",
+        "source": "spec-edge"
+      },
+      {
+        "path": "tests/site.spec.ts",
+        "source": "spec-edge"
+      },
+      {
+        "path": "tsconfig.json",
+        "source": "spec-edge"
+      },
+      {
+        "path": "vite.config.ts",
+        "source": "spec-edge"
+      }
+    ],
     "resolvedUnits": [
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "app/"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -65,7 +60,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "public/"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -74,7 +73,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "package-lock.json"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -83,7 +86,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "package.json"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -92,7 +99,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "playwright.config.ts"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -101,7 +112,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "react-router.config.ts"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -110,7 +125,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "tests/site.spec.ts"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -119,7 +138,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "tsconfig.json"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -128,7 +151,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "vite.config.ts"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -141,5 +168,5 @@
     "specStatus": "approved"
   },
   "schemaVersion": "1.2.0",
-  "shardHash": "834a296454999541cb384a5665a73f536b0703b38c20c1ae1982691e21e79afd"
+  "shardHash": "ac57f4653fd90ab4f898a3a7c0468a058f6706ac08772f85ff1b6ab4c753583a"
 }

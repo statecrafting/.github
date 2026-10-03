@@ -1,0 +1,11 @@
+{
+  "package": {
+    "kind": "npm-package",
+    "name": "statecrafting-public-frontend",
+    "path": "",
+    "specRef": "002-static-frontend",
+    "version": "0.1.0"
+  },
+  "schemaVersion": "1.2.0",
+  "shardHash": "b69c22881a60ca7731ce3a73652049d02fbd045c6d9e09d5f167fc03e028410c"
+}
