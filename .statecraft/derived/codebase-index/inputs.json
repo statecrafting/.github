@@ -31,7 +31,7 @@
       "contentHash": "858c5535a68e59dc4eeb2b52fdaf5ad4bd74383d7a639b15a9837a4b825b2294"
     },
     "app/lib/catalog.ts": {
-      "contentHash": "175377b2a8d0b860c26a17aafd895fc084d3cfbc8078b26e8303ddb0d97cd57e"
+      "contentHash": "2c66b89179a5c6954dbfa95a3cddab11a3fa40521514fcb1009772fafc6b3032"
     },
     "app/lib/reading.ts": {
       "contentHash": "5a309b48c7d47352671c89806df6a7eeadd6708860b88f797948601ce2a08706"
@@ -52,19 +52,19 @@
       "contentHash": "636ad64807c2109ead80f84a30d4bea5f3f008fa22ab0524bca2c070535a1be2"
     },
     "app/routes/home.tsx": {
-      "contentHash": "00f516ab26bedd6bfbf89b3536226c5f3edcf2b8148e450b1a6a043dec2b91e9"
+      "contentHash": "6242abfdf37b0abb30fdedc673bdc52c616cedac713e5b36f367b290f51b9f52"
     },
     "app/routes/missing.tsx": {
       "contentHash": "5e93e7cd6f2052b74e6799a8752baf8ace84e39e4fcab97fcf63f20f336c4684"
     },
     "app/routes/paper.tsx": {
-      "contentHash": "b889384db56010c542d2c9c2b38dcbfceecba7903d0110a16d76e11d39b8234c"
+      "contentHash": "4cd06a4981e5ca47a17219ce7a428c1f9e39c8139afb8dbb022dfb3ff3cbcbef"
     },
     "app/routes/papers.tsx": {
       "contentHash": "484eca93d7e315c72989d810cc8280b4cc3567214aae60b8fd177fd07a2d321c"
     },
     "app/routes/products.tsx": {
-      "contentHash": "fb7f4527b2af20f7fd1c2e217e906f379acae6b2cc830fe567cf55bf7b8cde1b"
+      "contentHash": "aae73c39133b1f1a3562de749322b7bbede50ea0f4981395b317fe8f6cae10e8"
     },
     "app/routes/registry.tsx": {
       "contentHash": "ae201694a87d325e5acecb50dfb7cc06785bad1a5c05cb0649332b8aad959ec2"
@@ -73,7 +73,7 @@
       "contentHash": "8758e3733809a94b6c27bd63fe108a13ec12b5a78d6093eaad4b35fb4b9b5c87"
     },
     "app/routes/spec.tsx": {
-      "contentHash": "d8609766d727e9d828469aa25d0e1398ff81abb6c0f08a6281b222ae53f7c030"
+      "contentHash": "631cd3048cc55f717498a31658e2bdf6ed80590d857f9297d8e1ec84207b72bb"
     },
     "catalog/schema.json": {
       "contentHash": "986c847d20e3e10389bbe7705dd1660dc6926a2992bfaf45268b66f0829ffc86"
@@ -109,7 +109,7 @@
       "contentHash": "b0ba9d1c2d4c6e5ccaf5f5d312804277b14a660e1438178b68438d923d714ea1"
     },
     "scripts/catalog/export.mjs": {
-      "contentHash": "b86d1c33f664973ae58cf332287649d92c6bd99a001428558ca16e63d6513261"
+      "contentHash": "5a1781380f8feb5925d20d9d0fa7ef2a5b5c6d9b2cd3ba78da944f6b2bcf8961"
     },
     "scripts/catalog/model.mjs": {
       "contentHash": "af85b4bd0598eddff61f109e58032010bd32e0ae20beeed04bac2fa358acd4c3"

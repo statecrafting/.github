@@ -10,8 +10,8 @@ export interface Source {
   role: string; description: string; specs: Spec[];
 }
 export interface Catalog { schemaVersion: 1; sources: Source[] }
-export const repoName = (source: Source) => source.repository.split('/')[1];
-export const specPath = (source: Source, spec: Spec) => `/registry/${repoName(source)}/${spec.id}`;
+export const repoName = (source: Pick<Source, 'repository'>) => source.repository.split('/')[1];
+export const specPath = (source: Pick<Source, 'repository'>, spec: Spec) => `/registry/${repoName(source)}/${spec.id}`;
 let clientCatalog: Promise<Catalog> | undefined;
 export function readClientCatalog(): Promise<Catalog> {
   return clientCatalog ??= fetch('/data/catalog.json').then(async response => {
@@ -21,3 +21,5 @@ export function readClientCatalog(): Promise<Catalog> {
     return data;
   });
 }
+
+export function sourceMetadata({specs, ...source}: Source): Omit<Source, 'specs'> { return source; }

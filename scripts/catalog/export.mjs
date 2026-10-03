@@ -11,7 +11,14 @@ const cache = resolve('.statecraft/state/catalog-sources');
 mkdirSync(cache, { recursive: true });
 const sources = [];
 for (const source of manifest.sources) {
-  const response = await fetch(`https://api.github.com/repos/${source.repository}`, { headers: { 'User-Agent': 'statecrafting-public-catalog', 'Accept': 'application/vnd.github+json' } });
+  let response;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      response = await fetch(`https://api.github.com/repos/${source.repository}`, { signal: AbortSignal.timeout(20000), headers: { 'User-Agent': 'statecrafting-public-catalog', 'Accept': 'application/vnd.github+json' } });
+      if (response.status < 500 || attempt === 2) break;
+    } catch (error) { if (attempt === 2) throw error; }
+    await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
+  }
   if (!response.ok) throw new Error(`Public visibility check failed for ${source.repository}: ${response.status}`);
   const metadata = await response.json();
   if (metadata.private !== false || metadata.full_name !== source.repository) throw new Error('Private or redirected source refused');
