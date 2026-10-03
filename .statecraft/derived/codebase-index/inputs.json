@@ -1,0 +1,32 @@
+{
+  "inputs": {
+    ".gitignore": {
+      "contentHash": "81478db71ea7ba7c3e6aaeceaff010e972fb0c7a9b1ffc09555ec01cc51bf1a6"
+    },
+    "AGENTS.md": {
+      "contentHash": "289230d34f1292a9399482f723625a9bf5037300277f26f63a4f19cdaf265fff"
+    },
+    "docs/public-frontend-adoption.md": {
+      "contentHash": "0d749201cf09944b2322b8f2596fdd9ea4df4161adce5d3a2f086caf14b1e42c"
+    },
+    "profile/README.md": {
+      "contentHash": "02abc5ec3ceb0a89f89a990c9585b87aff427ce7707157052d99aa3942d1a372"
+    },
+    "spec-spine.toml": {
+      "contentHash": "0ec36de8044696bcd4f25e501e778cfed985afb75a29a8f5d212c317cf39c35d"
+    },
+    "standards/spec/constitution.md": {
+      "contentHash": "a84dc81e5891d6045edd134b66d336ab45fec254fbdad71e33b54e8997e9309b"
+    },
+    "standards/spec/contract.md": {
+      "contentHash": "ba588fc0a3659e9560a76b25c335ba92efebea44bc2121e2eee5cad8b3dfa83c"
+    },
+    "standards/spec/templates/constitution-template.md": {
+      "contentHash": "9422c45aeea54a1765b9da797f6c7e958dd2e7d4e74a7e3b788f3ec281a97900"
+    },
+    "standards/spec/templates/spec-template.md": {
+      "contentHash": "ff016dd58ed2e6e59fed062a49961c76496b37a7a60d1f321af75b76574eef4f"
+    }
+  },
+  "schemaVersion": "1.2.0"
+}

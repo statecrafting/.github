@@ -1,0 +1,50 @@
+{
+  "record": {
+    "created": "2026-10-03",
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "establishes": [
+      {
+        "kind": "file",
+        "path": ".github/workflows/verify.yml"
+      },
+      {
+        "kind": "file",
+        "path": ".github/workflows/pages.yml"
+      },
+      {
+        "kind": "file",
+        "path": "scripts/verify-site.mjs"
+      },
+      {
+        "kind": "file",
+        "path": "scripts/install-spec-spine.sh"
+      },
+      {
+        "kind": "file",
+        "path": ".node-version"
+      }
+    ],
+    "id": "004-publication-workflows",
+    "implementation": "pending",
+    "sectionDigests": {
+      "1-verification": "00b2aa964f0c573040c57d2ffd34bfa67d9871eb02c82d0bb2c799988a1746d0",
+      "2-deployment": "3ecf90638106f460f7efca135509c40d67783955e205463f15f8332f9a4465b2",
+      "owner-ratification": "c998fe1e62934f6bf1c285bf3e2a42ba034b8da88c7a55f686dbe663372c935c",
+      "verification-and-github-pages-publication": "b2f8cff1205e0cdbe1af6e45272c6d0f5bcb850933e46666db3e9dc481e7a0a3"
+    },
+    "sectionHeadings": [
+      "Verification and GitHub Pages publication",
+      "1. Verification",
+      "2. Deployment",
+      "Owner ratification"
+    ],
+    "specPath": "specs/004-publication-workflows/spec.md",
+    "status": "approved",
+    "summary": "Reproducible least-permission verification and single-publisher Pages deployment to the custom domain.",
+    "title": "Verification and GitHub Pages publication"
+  },
+  "shardHash": "4542ff013b3fa51fd2d77d7025e9f3b49926e2932df3cbf5e0fbac5e04daae49",
+  "specVersion": "1.9.0"
+}

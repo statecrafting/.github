@@ -1,0 +1,68 @@
+{
+  "record": {
+    "created": "2026-10-03",
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "establishes": [
+      {
+        "kind": "file",
+        "path": "package.json"
+      },
+      {
+        "kind": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "kind": "file",
+        "path": "tsconfig.json"
+      },
+      {
+        "kind": "file",
+        "path": "vite.config.ts"
+      },
+      {
+        "kind": "file",
+        "path": "react-router.config.ts"
+      },
+      {
+        "kind": "directory",
+        "path": "app/"
+      },
+      {
+        "kind": "directory",
+        "path": "public/"
+      },
+      {
+        "kind": "file",
+        "path": "tests/site.spec.ts"
+      },
+      {
+        "kind": "file",
+        "path": "playwright.config.ts"
+      }
+    ],
+    "id": "002-static-frontend",
+    "implementation": "pending",
+    "sectionDigests": {
+      "1-architecture-and-routes": "07075b89064bea7a0e327162c8d92217fc628bf1181ac94757c6d89926bd99f9",
+      "2-honest-content": "3b5b289f19a84f346a9035a638a588d42492c68a6987025f39f0c2c53a8b41d3",
+      "3-route-integrity-and-acceptance": "9052dc81f70a922cd13423dc8c9191780e6b1b0d09b5ec310ef1b1b2b9a43b9c",
+      "owner-ratification": "a39aa95958af671f708afd42a369e21fc79cbb80e572b5f68ceb6b250da7ac99",
+      "static-public-frontend-and-reading-surfaces": "1dffa53d00bd1076ace92037bc7608048b1c7ab0cacf3ca8986408c5e78f6df5"
+    },
+    "sectionHeadings": [
+      "Static public frontend and reading surfaces",
+      "1. Architecture and routes",
+      "2. Honest content",
+      "3. Route integrity and acceptance",
+      "Owner ratification"
+    ],
+    "specPath": "specs/002-static-frontend/spec.md",
+    "status": "approved",
+    "summary": "A static accessible website with current claims, catalog routes, reading controls, themes and architecture explanations.",
+    "title": "Static public frontend and reading surfaces"
+  },
+  "shardHash": "834a296454999541cb384a5665a73f536b0703b38c20c1ae1982691e21e79afd",
+  "specVersion": "1.9.0"
+}

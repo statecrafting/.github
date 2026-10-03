@@ -1,0 +1,50 @@
+{
+  "record": {
+    "created": "2026-10-03",
+    "dependsOn": [
+      "000-bootstrap"
+    ],
+    "establishes": [
+      {
+        "kind": "file",
+        "path": "catalog/sources.json"
+      },
+      {
+        "kind": "file",
+        "path": "catalog/schema.json"
+      },
+      {
+        "kind": "directory",
+        "path": "scripts/catalog/"
+      },
+      {
+        "kind": "file",
+        "path": "tests/catalog.test.mjs"
+      }
+    ],
+    "id": "003-public-catalog",
+    "implementation": "pending",
+    "sectionDigests": {
+      "1-source-authority": "e8d8e64e86c095e67308ed61c3b8c816cdea3f8a779825abeed606f833bf4fed",
+      "2-presentation-schema": "51b29515daae0323ac65bd7d49cc59e522d80441dcc8728d37175b7ee2108208",
+      "3-private-platform-publication": "1d6e77f072294b7e968f653284d1677f94e966f8e1bec9fd9e02f3b71b68ba90",
+      "4-acceptance": "e129ba540f61de8e5dc715c9efc089ec646e0b07461ad361b26c1bbebd4e335d",
+      "owner-ratification": "7c855842c3970ab76ef4f037af95ffa6be5af6ba29219c2c4d95e2ce7baf24bb",
+      "pinned-public-catalog-ingestion-and-publication-boundary": "ccdd782035d43bc7ea5f39fc8102e3283896db32cd1f0c804ed66cf34fde9653"
+    },
+    "sectionHeadings": [
+      "Pinned public catalog ingestion and publication boundary",
+      "1. Source authority",
+      "2. Presentation schema",
+      "3. Private-platform publication",
+      "4. Acceptance",
+      "Owner ratification"
+    ],
+    "specPath": "specs/003-public-catalog/spec.md",
+    "status": "approved",
+    "summary": "Deterministic public-source exports through supported pinned spec-spine commands, preserving provenance and authority limits.",
+    "title": "Pinned public catalog ingestion and publication boundary"
+  },
+  "shardHash": "75cb0c4b7152b3d77f3cc292e1e589cb1439d74c56401634627e39bccfeb3e20",
+  "specVersion": "1.9.0"
+}
