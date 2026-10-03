@@ -3,7 +3,7 @@ id: "000-bootstrap"
 title: "Bootstrap spec system"
 # Written as a draft by statecraft-cli init: ratifying a spec, setting
 # its status to approved, is the owner's act and never a tool's.
-status: draft
+status: approved
 # This spec owns governance policy, not application implementation.
 implementation: n-a
 created: "2026-10-03"
@@ -45,3 +45,9 @@ Specs declare typed edges (`establishes`, `extends`, `refines`,
 `supersedes`, `amends`, `co_authority`, `constrains`, `references`) and
 the units they own (file / section / symbol / directory / crate / module).
 Authority is derived by walking the graph.
+
+## Owner ratification
+
+Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
+`statecraft.ing` frontend. Implementation, verification and deployment evidence
+remain separate from this approval.

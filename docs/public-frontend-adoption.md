@@ -1,6 +1,6 @@
 # Public frontend adoption proposal
 
-Observed 2026-10-03. This is a proposal, not ratification or a deployment receipt.
+Observed 2026-10-03. Owner-ratified on 2026-10-03. This is not a deployment receipt.
 
 ## Baseline and setup
 
@@ -22,7 +22,7 @@ Current Statecraft CLI main is `0748fc721a5e51baff7c1d137be6e8756f7b9088`.
 No published release was found. Its only setup profile is
 `github-actions-rust`, revision 15. Governance-only `init apply` was used in
 an isolated worktree; no Rust application profile was installed. The generated
-bootstrap remains draft. Registration does not arm or qualify the project.
+bootstrap has now been owner-ratified. Registration does not arm or qualify the project.
 The generated managed instructions were read explicitly; Codex delivery was
 reported unverified, so native import execution is not assumed.
 
@@ -101,13 +101,11 @@ revision at implementation time, and retain unknown evidence explicitly.
 
 ## Owner checkpoint and delivery sequence
 
-Ratify exact specs 000-bootstrap, 001-organization-profile, 002-static-frontend,
-003-public-catalog and 004-publication-workflows before their implementation.
-The owner must explicitly approve these contracts; this proposal preserves
-`status: draft` and `implementation: pending` (bootstrap is `n-a`). Broad work
-and deployment authorization is not ratification. An owner instruction may
-identify this exact proposal revision and the approved IDs, after which the
-status change and regenerated artifacts can be recorded separately.
+The owner ratified specs 000-bootstrap, 001-organization-profile,
+002-static-frontend, 003-public-catalog and 004-publication-workflows on
+2026-10-03 for delivery of the public frontend. All now have `status: approved`;
+implementation remains pending (bootstrap is `n-a`). Private export publication
+remains outside these contracts.
 
 After ratification: implement static routes/readers, pinned ingestion and
 required-source refusal; add verification and Pages Actions; validate a preview

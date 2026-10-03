@@ -1,7 +1,7 @@
 ---
 id: "002-static-frontend"
 title: "Static public frontend and reading surfaces"
-status: draft
+status: approved
 implementation: pending
 created: "2026-10-03"
 summary: "A static accessible website with current claims, catalog routes, reading controls, themes and architecture explanations."
@@ -59,3 +59,9 @@ links, refreshes, navigation, mobile widths, keyboard controls, themes, print,
 source links and artifact privacy. Pages custom-domain routes use the apex
 rather than the default project subpath. No local handoffs or evidence enter
 the deploy artifact.
+
+## Owner ratification
+
+Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
+`statecraft.ing` frontend. Implementation, verification and deployment evidence
+remain separate from this approval.

@@ -14,19 +14,21 @@
     "implementation": "pending",
     "sectionDigests": {
       "1-behavior": "43917efbf109344fda4c115cb5b39f192c3ab85a25c1d3fd51c9ec8b691636c5",
-      "2-acceptance": "81fea808d19210b04235e53bddc76711c3a8d9cd4030e0c244ddab0439e57e1e",
-      "public-organization-profile": "8fb5cf713649f0f5c60a276a1f3352136821da6c53ec728b0d1847297750a73b"
+      "2-acceptance": "7d8eb4fac506e3fd0357222aaca37c5d1043138cad3a907763373603f9ef1925",
+      "owner-ratification": "147490d120e15bfc4f95093fcabaaf96a6999ad493592967b7af17d1e284b531",
+      "public-organization-profile": "dee5f32ca567c3d1ba8731c07f22e3ec0b6a2e9716b5af84c430dbd61d60e365"
     },
     "sectionHeadings": [
       "Public organization profile",
       "1. Behavior",
-      "2. Acceptance"
+      "2. Acceptance",
+      "Owner ratification"
     ],
     "specPath": "specs/001-organization-profile/spec.md",
-    "status": "draft",
+    "status": "approved",
     "summary": "An accessible public organization introduction linking the website and current public family resources.",
     "title": "Public organization profile"
   },
-  "shardHash": "6802dcf4ce43e5c30ddbe67346e2e7726c1df8b96cf0ec48a9d0e3bc7a7e927b",
+  "shardHash": "6ddd4ad953b1f02c41b50eb1a6e30bd84ea6469aa2c0aa110c467258a01d7487",
   "specVersion": "1.9.0"
 }

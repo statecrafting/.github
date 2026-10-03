@@ -68,8 +68,8 @@
       }
     ],
     "specId": "003-public-catalog",
-    "specStatus": "draft"
+    "specStatus": "approved"
   },
   "schemaVersion": "1.2.0",
-  "shardHash": "a9c66fb30f2d9175e4dc647eb0b97ab28330d41635646ad57aeb7a791df8a80d"
+  "shardHash": "75cb0c4b7152b3d77f3cc292e1e589cb1439d74c56401634627e39bccfeb3e20"
 }

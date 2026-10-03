@@ -82,8 +82,8 @@
       }
     ],
     "specId": "004-publication-workflows",
-    "specStatus": "draft"
+    "specStatus": "approved"
   },
   "schemaVersion": "1.2.0",
-  "shardHash": "1a47b5ab320be92817f84e91df2a0ecf9cf1d405a6c09a4294f1d99eb6ed3cad"
+  "shardHash": "4542ff013b3fa51fd2d77d7025e9f3b49926e2932df3cbf5e0fbac5e04daae49"
 }

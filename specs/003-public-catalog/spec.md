@@ -1,7 +1,7 @@
 ---
 id: "003-public-catalog"
 title: "Pinned public catalog ingestion and publication boundary"
-status: draft
+status: approved
 implementation: pending
 created: "2026-10-03"
 summary: "Deterministic public-source exports through supported pinned spec-spine commands, preserving provenance and authority limits."
@@ -67,3 +67,9 @@ Exercise deterministic export, missing-source refusal, bad pins, unsupported
 producer, stale source, schema rejection, unknown evidence and route set
 completeness. Scan the final artifact for publication violations. CI uses only
 public inputs and cannot silently substitute an older payload on failure.
+
+## Owner ratification
+
+Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
+`statecraft.ing` frontend. Implementation, verification and deployment evidence
+remain separate from this approval.

@@ -1,7 +1,7 @@
 ---
 id: "004-publication-workflows"
 title: "Verification and GitHub Pages publication"
-status: draft
+status: approved
 implementation: pending
 created: "2026-10-03"
 summary: "Reproducible least-permission verification and single-publisher Pages deployment to the custom domain."
@@ -49,3 +49,9 @@ deployment. DNS already targets GitHub Pages, but its current certificate is
 not proof of delivery. Preserve deployment identifiers and rollback evidence
 in ignored state. Do not declare completion until live HTTPS serves the intended
 artifact and verification passed.
+
+## Owner ratification
+
+Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
+`statecraft.ing` frontend. Implementation, verification and deployment evidence
+remain separate from this approval.

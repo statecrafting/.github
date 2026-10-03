@@ -1,7 +1,7 @@
 ---
 id: "001-organization-profile"
 title: "Public organization profile"
-status: draft
+status: approved
 implementation: pending
 created: "2026-10-03"
 summary: "An accessible public organization introduction linking the website and current public family resources."
@@ -28,3 +28,9 @@ qualification. Render correctly on GitHub without custom scripts or CSS.
 Verify rendered links and public accessibility after publication. The website
 link is considered delivered only after the apex serves the intended artifact
 over valid HTTPS. Profile completion does not ratify the other specs.
+
+## Owner ratification
+
+Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
+`statecraft.ing` frontend. Implementation, verification and deployment evidence
+remain separate from this approval.
