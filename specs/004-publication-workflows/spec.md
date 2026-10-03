@@ -2,15 +2,18 @@
 id: "004-publication-workflows"
 title: "Verification and GitHub Pages publication"
 status: approved
-implementation: pending
+implementation: in-progress
 created: "2026-10-03"
 summary: "Reproducible least-permission verification and single-publisher Pages deployment to the custom domain."
 depends_on:
   - "000-bootstrap"
+extends:
+  - { spec: "000-bootstrap", unit: "spec-spine.toml", nature: "additive" }
 establishes:
   - ".github/workflows/verify.yml"
   - ".github/workflows/pages.yml"
   - "scripts/verify-site.mjs"
+  - "scripts/preview.mjs"
   - "scripts/install-spec-spine.sh"
   - ".node-version"
 ---
@@ -21,8 +24,7 @@ establishes:
 
 Before accepting implementation, retire ownership coverage debt and enable
 `require_ownership` with an explicit governed scope covering all authored
-frontend, scripts, catalog, profile and workflow files. The starter default
-is temporarily false for this draft-only proposal. Absent future paths remain
+frontend, scripts, catalog, profile and workflow files. The implementation enables the ownership ratchet after coverage debt is retired. Absent future paths remain
 visible unresolved diagnostics, not passing implementation evidence.
 
 Pin actions to immutable commits with recognizable release annotations.

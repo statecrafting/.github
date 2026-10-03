@@ -64,8 +64,8 @@ and draft 006 are design evidence, not approvals in this repository.
 ## Public source inventory
 
 These immutable public revisions were observed on 2026-10-03. Each non-skeletal
-corpus declares exact spec-spine 0.28.0. These are proposed source pins, not
-completed exports or verified implementation. All have Apache-2.0 except
+corpus declares exact spec-spine 0.28.0. These pins define the initial export snapshot. Export freshness does not establish
+verified implementation. All have Apache-2.0 except
 chancery, whose API license metadata is absent. Confirm source license files
 before any code reuse; descriptions alone do not grant a license.
 
@@ -104,7 +104,7 @@ revision at implementation time, and retain unknown evidence explicitly.
 The owner ratified specs 000-bootstrap, 001-organization-profile,
 002-static-frontend, 003-public-catalog and 004-publication-workflows on
 2026-10-03 for delivery of the public frontend. All now have `status: approved`;
-implementation remains pending (bootstrap is `n-a`). Private export publication
+implementation was pending at ratification (bootstrap is `n-a`). Private export publication
 remains outside these contracts.
 
 After ratification: implement static routes/readers, pinned ingestion and
@@ -112,3 +112,16 @@ required-source refusal; add verification and Pages Actions; validate a preview
 and privacy; publish through one verified publisher; check live HTTPS and org
 profile. Use separate implementation evidence and exact-head reviews. The
 proposal itself contains no frontend, ingestion, workflow or DNS switch.
+
+## Initial implementation evidence
+
+The implementation pins Node 24.6.0, React Router 7.18.4, React 19.3.0,
+Vite 8.3.2 and TypeScript 5.9.3 with an npm lockfile. Build-time rendering
+uses React Router server tooling; the published artifact is static.
+Supported producer reads export 336 specifications from the twelve required
+public revisions. Two local exports are byte-identical. The static verifier
+checks all 357 routes and the publication boundary. Eight exporter tests and
+six Chromium browser tests pass locally, including mobile navigation, focus,
+themes, missing identities, provenance, search, reader anchors and print.
+Ownership is enabled with all authored frontend territory specifically claimed.
+These are local results; hosted CI and live delivery require separate receipts.

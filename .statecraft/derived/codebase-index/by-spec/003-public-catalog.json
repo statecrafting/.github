@@ -1,37 +1,33 @@
 {
-  "diagnostics": {
-    "errors": [],
-    "warnings": [
-      {
-        "code": "W-001",
-        "message": "spec '003-public-catalog' file unit 'catalog/sources.json' does not exist",
-        "path": "catalog/sources.json"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '003-public-catalog' file unit 'catalog/schema.json' does not exist",
-        "path": "catalog/schema.json"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '003-public-catalog' directory unit 'scripts/catalog/' is not a directory",
-        "path": "scripts/catalog/"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '003-public-catalog' file unit 'tests/catalog.test.mjs' does not exist",
-        "path": "tests/catalog.test.mjs"
-      }
-    ]
-  },
   "mapping": {
     "dependsOn": [
       "000-bootstrap"
     ],
-    "implementingPaths": [],
+    "implementingPaths": [
+      {
+        "path": "catalog/schema.json",
+        "source": "spec-edge"
+      },
+      {
+        "path": "catalog/sources.json",
+        "source": "spec-edge"
+      },
+      {
+        "path": "scripts/catalog/",
+        "source": "spec-edge"
+      },
+      {
+        "path": "tests/catalog.test.mjs",
+        "source": "spec-edge"
+      }
+    ],
     "resolvedUnits": [
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "scripts/catalog/"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -40,7 +36,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "catalog/schema.json"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -49,7 +49,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "catalog/sources.json"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -58,7 +62,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "tests/catalog.test.mjs"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -71,5 +79,5 @@
     "specStatus": "approved"
   },
   "schemaVersion": "1.2.0",
-  "shardHash": "75cb0c4b7152b3d77f3cc292e1e589cb1439d74c56401634627e39bccfeb3e20"
+  "shardHash": "9db25556d9939e05f4b47878ef089558943055890393c033d4a4e7f36cd14527"
 }

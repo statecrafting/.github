@@ -1,0 +1,8 @@
+import { useEffect, useState } from 'react';
+import type { Section } from '../lib/reading';
+import { Architecture } from './architecture';
+export function Reader({sections, children}: {sections: Section[]; children?: React.ReactNode}) {
+ const [active,setActive]=useState(sections[0]?.id); const [progress,setProgress]=useState(0);
+ useEffect(()=> { const scroll=()=>{ const max=document.documentElement.scrollHeight-window.innerHeight;setProgress(max>0?Math.min(100,100*window.scrollY/max):100); };scroll();window.addEventListener('scroll',scroll,{passive:true}); const observer=new IntersectionObserver(entries=>{for(const entry of entries) if(entry.isIntersecting)setActive(entry.target.id);},{rootMargin:'-10% 0px -60% 0px'});sections.forEach(s=>{const el=document.getElementById(s.id);if(el)observer.observe(el);}); return ()=>{window.removeEventListener('scroll',scroll);observer.disconnect();};},[sections]);
+ return <><div className="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress)}><span style={{width:`${progress}%`}}/></div><div className="reader-layout"><aside className="reader-toc"><nav aria-label="Table of contents"><p className="eyebrow">On this page</p>{sections.map(s=><a key={s.id} href={`#${s.id}`} aria-current={active===s.id?'location':undefined}>{s.title}</a>)}</nav><button className="print-button" onClick={()=>window.print()}>Print this page ↗</button></aside><div className="reader-body">{sections.map(s=><section id={s.id} key={s.id}><h2>{s.title}</h2>{s.paragraphs.map((p,i)=><p key={i}>{p}</p>)}{s.code&&<pre><code>{s.code}</code></pre>}{s.diagram&&<Architecture/>}</section>)}{children}</div></div></>;
+}

@@ -1,42 +1,45 @@
 {
-  "diagnostics": {
-    "errors": [],
-    "warnings": [
-      {
-        "code": "W-001",
-        "message": "spec '004-publication-workflows' file unit '.github/workflows/verify.yml' does not exist",
-        "path": ".github/workflows/verify.yml"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '004-publication-workflows' file unit '.github/workflows/pages.yml' does not exist",
-        "path": ".github/workflows/pages.yml"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '004-publication-workflows' file unit 'scripts/verify-site.mjs' does not exist",
-        "path": "scripts/verify-site.mjs"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '004-publication-workflows' file unit 'scripts/install-spec-spine.sh' does not exist",
-        "path": "scripts/install-spec-spine.sh"
-      },
-      {
-        "code": "W-001",
-        "message": "spec '004-publication-workflows' file unit '.node-version' does not exist",
-        "path": ".node-version"
-      }
-    ]
-  },
   "mapping": {
     "dependsOn": [
       "000-bootstrap"
     ],
-    "implementingPaths": [],
+    "implementingPaths": [
+      {
+        "path": ".github/workflows/pages.yml",
+        "source": "spec-edge"
+      },
+      {
+        "path": ".github/workflows/verify.yml",
+        "source": "spec-edge"
+      },
+      {
+        "path": ".node-version",
+        "source": "spec-edge"
+      },
+      {
+        "path": "scripts/install-spec-spine.sh",
+        "source": "spec-edge"
+      },
+      {
+        "path": "scripts/preview.mjs",
+        "source": "spec-edge"
+      },
+      {
+        "path": "scripts/verify-site.mjs",
+        "source": "spec-edge"
+      },
+      {
+        "path": "spec-spine.toml",
+        "source": "spec-edge"
+      }
+    ],
     "resolvedUnits": [
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": ".github/workflows/pages.yml"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -45,7 +48,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": ".github/workflows/verify.yml"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -54,7 +61,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": ".node-version"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -63,7 +74,11 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "scripts/install-spec-spine.sh"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
@@ -72,12 +87,42 @@
         }
       },
       {
-        "locations": [],
+        "locations": [
+          {
+            "file": "scripts/preview.mjs"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "scripts/preview.mjs"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "scripts/verify-site.mjs"
+          }
+        ],
         "ownership": true,
         "sourceField": "establishes",
         "unit": {
           "kind": "file",
           "path": "scripts/verify-site.mjs"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "spec-spine.toml"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "extends",
+        "unit": {
+          "kind": "file",
+          "path": "spec-spine.toml"
         }
       }
     ],
@@ -85,5 +130,5 @@
     "specStatus": "approved"
   },
   "schemaVersion": "1.2.0",
-  "shardHash": "4542ff013b3fa51fd2d77d7025e9f3b49926e2932df3cbf5e0fbac5e04daae49"
+  "shardHash": "5c00ab5ce9f6fd07e06067abdf9fd475c170b54626556799093ea04602a9bc6c"
 }

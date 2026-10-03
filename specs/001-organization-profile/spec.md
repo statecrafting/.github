@@ -2,7 +2,7 @@
 id: "001-organization-profile"
 title: "Public organization profile"
 status: approved
-implementation: pending
+implementation: in-progress
 created: "2026-10-03"
 summary: "An accessible public organization introduction linking the website and current public family resources."
 depends_on:

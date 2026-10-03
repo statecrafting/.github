@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "repository": "statecrafting/action-gate",
+      "revision": "6cfa81efb0426d2c4242e2919b58180ec3b384ea",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Deterministic decisions",
+      "description": "Evaluate checks into explicit allow, deny or degrade outcomes."
+    },
+    {
+      "repository": "statecrafting/aicortex",
+      "revision": "e05a5a9c3a7724f2c491b24b8e1dc896518b741a",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Persistent memory",
+      "description": "A governed memory service for AI clients, built on Rahi."
+    },
+    {
+      "repository": "statecrafting/attest-ledger",
+      "revision": "a6b3eac8aa9ae2d9f2329c687f818d10c82cc565",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Hash-linked records",
+      "description": "Append-only records with optional signing capabilities."
+    },
+    {
+      "repository": "statecrafting/canonical-keysort-json",
+      "revision": "920eb173da928b70cdc96c66d98cd85ac5dfd91d",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Canonical serialization",
+      "description": "Sort JSON keys at the hashing boundary."
+    },
+    {
+      "repository": "statecrafting/rahi",
+      "revision": "73e937cce7f9d5c25db0939801456b8c94b2359e",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Rust application chassis",
+      "description": "A chassis for governed cells, with storage, identity and delivery seams."
+    },
+    {
+      "repository": "statecrafting/rustev",
+      "revision": "1c713a61033279ce9b81d11d683bdf551f7a3769",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Decision proposals",
+      "description": "An embeddable Rust engine that proposes decisions without granting authority."
+    },
+    {
+      "repository": "statecrafting/spec-spine",
+      "revision": "943504d6b82a9a6b40f7f3f82f39f89255aaa0d9",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Specification authority",
+      "description": "Compile authored specs and inspect their authority and ownership graph."
+    },
+    {
+      "repository": "statecrafting/statecraft-cli",
+      "revision": "0748fc721a5e51baff7c1d137be6e8756f7b9088",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Local work environment",
+      "description": "Register projects, inspect configuration and drive governed local work."
+    },
+    {
+      "repository": "statecrafting/tenant-emit",
+      "revision": "fe85c3a2c33189e2c02bccef78b06328dc67b414",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Artifact emission",
+      "description": "Emit run-side artifacts for independent verification."
+    },
+    {
+      "repository": "statecrafting/tenant-tail",
+      "revision": "229a611f53e8aa481cbde8178f7b9a4b8804d3fe",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Independent verification",
+      "description": "Recheck emitted artifacts without trusting their producer."
+    },
+    {
+      "repository": "statecrafting/trust-window",
+      "revision": "33f0dd2dcc4e199b45e4f7b2d63474c726c4a8f7",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Graduated trust",
+      "description": "Score weighted samples over a rolling window."
+    },
+    {
+      "repository": "statecrafting/wire-witness",
+      "revision": "9e8c647676f1898643c7cd2c301f6bb339db1bd5",
+      "producer": "0.28.0",
+      "observedAt": "2026-10-03",
+      "required": true,
+      "role": "Wire evidence",
+      "description": "Capture provider traffic as evidence, with limits separate from acceptance."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "statecrafting-public-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "spec-spine": {
+    "spec": "002-static-frontend"
+  },
+  "engines": {
+    "node": ">=24.6.0 <25"
+  },
+  "scripts": {
+    "dev": "react-router dev",
+    "catalog": "node scripts/catalog/export.mjs",
+    "typecheck": "react-router typegen && tsc --noEmit",
+    "build": "react-router build && node scripts/verify-site.mjs",
+    "test": "node --test tests/catalog.test.mjs",
+    "test:browser": "playwright test",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "@react-router/node": "7.18.4",
+    "isbot": "5.2.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-router": "7.18.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@react-router/dev": "7.18.4",
+    "@types/node": "24.19.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "ajv": "8.20.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.2"
+  }
+}

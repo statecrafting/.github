@@ -29,7 +29,7 @@ unamendable:
 # 000: Bootstrap spec system
 
 This bootstrap defines the governance of the public organization frontend.
-It is a draft requiring owner ratification. Archive approvals do not apply. Each
+Owner ratification is recorded below. Archive approvals do not apply. Each
 compilation unit links back here (or to a more specific spec) via
 `[package.metadata.spec-spine].spec` in its manifest, a `// Spec:` comment
 header, or a spec's ownership edge.

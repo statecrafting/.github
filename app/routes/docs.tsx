@@ -1,0 +1,4 @@
+import { Link } from 'react-router';
+import { docs } from '../lib/reading';
+export const meta=()=>[{title:'Documentation | Statecraft'}];
+export default function Docs(){return <div className="shell page"><p className="eyebrow">Documentation</p><h1>Know what<br/><em>the record says.</em></h1><p className="lede">A short guide to reading declarations and tracing them to their public sources.</p><div className="card-grid">{Object.entries(docs).map(([slug,doc])=><Link className="feature-card" key={slug} to={`/docs/${slug}`}><span className="mono">FIELD GUIDE</span><h2>{doc.title}</h2><p>{doc.intro}</p><span>Read the guide ↗</span></Link>)}<Link className="feature-card" to="/get-started"><span className="mono">LOCAL TOOLS</span><h2>Get started</h2><p>Inspect a public specification corpus with the exact producer it requires.</p><span>Start reading ↗</span></Link></div></div>;}

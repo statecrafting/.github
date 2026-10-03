@@ -23,7 +23,7 @@
       }
     ],
     "id": "003-public-catalog",
-    "implementation": "pending",
+    "implementation": "in-progress",
     "sectionDigests": {
       "1-source-authority": "e8d8e64e86c095e67308ed61c3b8c816cdea3f8a779825abeed606f833bf4fed",
       "2-presentation-schema": "51b29515daae0323ac65bd7d49cc59e522d80441dcc8728d37175b7ee2108208",
@@ -45,6 +45,6 @@
     "summary": "Deterministic public-source exports through supported pinned spec-spine commands, preserving provenance and authority limits.",
     "title": "Pinned public catalog ingestion and publication boundary"
   },
-  "shardHash": "75cb0c4b7152b3d77f3cc292e1e589cb1439d74c56401634627e39bccfeb3e20",
+  "shardHash": "9db25556d9939e05f4b47878ef089558943055890393c033d4a4e7f36cd14527",
   "specVersion": "1.9.0"
 }

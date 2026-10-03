@@ -26,7 +26,7 @@
     "id": "000-bootstrap",
     "implementation": "n-a",
     "sectionDigests": {
-      "000-bootstrap-spec-system": "bc3d19e75c48b71b622b3c7d7f75311aaf1e3558828529c6bdfb4c99212c8b11",
+      "000-bootstrap-spec-system": "d56c39f32375721c72dc9ca5294e31bbaa80652372bd5f34806b4b3b14bcb5f3",
       "1-the-authoring-derived-boundary": "772909940515f387ab8482a8a862ffd5cd351c3e90ad2f9564962e0bc40a383e",
       "2-the-typed-authority-graph": "9c215a4495dea6c080e795f4ee176e59781947403a511f034b3b8b26aed0d08c",
       "owner-ratification": "fb6409010aafaf1c5f7fdbd0996afac5d8efc795d323278b75e230f0078e8ef5"
@@ -49,6 +49,6 @@
       "refusal-rule"
     ]
   },
-  "shardHash": "6026cdfb34facc4df1484d564fcb001c3105b89a52311c5dec49bae6d5d07ee2",
+  "shardHash": "0dc842fd2aa676dad1853e94c821275a3fac2657459330eb87f674337bf590b9",
   "specVersion": "1.9.0"
 }
