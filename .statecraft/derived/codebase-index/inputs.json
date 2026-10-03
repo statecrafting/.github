@@ -99,17 +99,11 @@
     "public/CNAME": {
       "contentHash": "844481f2350ddec85ac24089e2d583e111439b862cee617d8135643426358f81"
     },
-    "public/data/catalog.json": {
-      "contentHash": "eebf31988b054f4fb59c8e31081e0c2e827cde780ab7d19fab09ab86d7cc755d"
-    },
     "public/favicon.svg": {
       "contentHash": "954a2264d90b17127e6e0534a6feda70496a88e435bd059356d0f4aa9759a5b4"
     },
     "public/robots.txt": {
       "contentHash": "cdfa7c0892cdbfa912f661bdbf027e765f983517ecb3c19d014a49cbcb606505"
-    },
-    "public/sitemap.xml": {
-      "contentHash": "ae3a3df498346d87b6ed306290fe76dbc8e9db16e8a88b22a199a41bf9a934b8"
     },
     "react-router.config.ts": {
       "contentHash": "b0ba9d1c2d4c6e5ccaf5f5d312804277b14a660e1438178b68438d923d714ea1"
@@ -130,7 +124,7 @@
       "contentHash": "cd6a84840618cd996065c7f39d901d79082c94e3e4a9f86067dd934faa47e539"
     },
     "spec-spine.toml": {
-      "contentHash": "39fa2ad3356033b7adfeac550eacffb79aa521a42d6c0694ca20ad93c554b617"
+      "contentHash": "9629497b3a501425704b18b34e8694075330cb0bd778b57080cd252942285e10"
     },
     "standards/spec/constitution.md": {
       "contentHash": "a84dc81e5891d6045edd134b66d336ab45fec254fbdad71e33b54e8997e9309b"

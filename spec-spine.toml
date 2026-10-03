@@ -59,7 +59,7 @@ npm_workspaces = ["package.json", "pnpm-workspace.yaml"]
 # extend this list, keep the trailing `/*`:
 #
 #   extra_hashed_inputs = ["standards/spec/**/*", ".github/workflows/**/*"]
-extra_hashed_inputs = ["standards/**/*", ".github/workflows/**/*", "profile/README.md", "AGENTS.md", ".gitignore", "docs/**/*", "app/**/*", "catalog/**/*", "scripts/**/*", "tests/**/*", "public/**/*", "package.json", "package-lock.json", "tsconfig.json", "vite.config.ts", "react-router.config.ts", "playwright.config.ts", ".node-version"]
+extra_hashed_inputs = ["standards/**/*", ".github/workflows/**/*", "profile/README.md", "AGENTS.md", ".gitignore", "docs/**/*", "app/**/*", "catalog/**/*", "scripts/**/*", "tests/**/*", "public/CNAME", "public/favicon.svg", "public/robots.txt", "package.json", "package-lock.json", "tsconfig.json", "vite.config.ts", "react-router.config.ts", "playwright.config.ts", ".node-version"]
 # Directories the symbol resolver and the coverage walk skip.
 resolver_exclusions = ["target", "node_modules", "dist", "build", ".next", ".statecraft/derived", ".statecraft/state", ".bin", ".react-router", "test-results", "playwright-report", "public/data", "public/sitemap.xml"]
 # Named path sets `index check --slice <name>` can gate on their own.
