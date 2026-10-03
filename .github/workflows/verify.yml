@@ -36,6 +36,8 @@ jobs:
         if: github.event_name == 'pull_request'
         run: spec-spine couple --base origin/main
       - name: Export public catalog twice
+        env:
+          GH_PUBLIC_METADATA_TOKEN: ${{ github.token }}
         run: |
           npm run catalog
           cp public/data/catalog.json .statecraft/state/catalog-first.json

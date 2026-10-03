@@ -13,6 +13,10 @@
         "source": "spec-edge"
       },
       {
+        "path": "docs/public-frontend-adoption.md",
+        "source": "spec-edge"
+      },
+      {
         "path": "scripts/catalog/",
         "source": "spec-edge"
       },
@@ -73,11 +77,24 @@
           "kind": "file",
           "path": "tests/catalog.test.mjs"
         }
+      },
+      {
+        "locations": [
+          {
+            "file": "docs/public-frontend-adoption.md"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "extends",
+        "unit": {
+          "kind": "file",
+          "path": "docs/public-frontend-adoption.md"
+        }
       }
     ],
     "specId": "003-public-catalog",
     "specStatus": "approved"
   },
   "schemaVersion": "1.2.0",
-  "shardHash": "9db25556d9939e05f4b47878ef089558943055890393c033d4a4e7f36cd14527"
+  "shardHash": "050608bd5ee3ef292ecb088ce94d21a2bc603e038df3abfc4b9b153352f8c73c"
 }

@@ -125,3 +125,9 @@ six Chromium browser tests pass locally, including mobile navigation, focus,
 themes, missing identities, provenance, search, reader anchors and print.
 Ownership is enabled with all authored frontend territory specifically claimed.
 These are local results; hosted CI and live delivery require separate receipts.
+
+CI public visibility metadata reads use only the workflow repository-scoped
+read-only token to avoid shared anonymous API quotas. Every source also passes
+an anonymous Git access check with global Git configuration and credential
+helpers disabled. The metadata token is removed from source subprocesses.
+No private source token or private corpus access is provided.

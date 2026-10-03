@@ -27,6 +27,8 @@ jobs:
           bash scripts/install-spec-spine.sh
           echo "$GITHUB_WORKSPACE/.bin" >> "$GITHUB_PATH"
       - name: Verify and build
+        env:
+          GH_PUBLIC_METADATA_TOKEN: ${{ github.token }}
         run: |
           spec-spine lint --fail-on-warn
           spec-spine check --fail-on-warn --fail-on-unresolved
@@ -57,10 +59,11 @@ jobs:
     steps:
       - name: Refuse a superseded commit
         env:
+          CURRENT_MAIN_TOKEN: ${{ github.token }}
           EXPECTED_SHA: ${{ github.sha }}
           REPOSITORY: ${{ github.repository }}
         run: |
-          current_sha=$(curl --fail --silent --show-error --max-time 20 --retry 2 --retry-delay 2 --retry-max-time 70 "https://api.github.com/repos/$REPOSITORY/commits/main" | jq -er .sha)
+          current_sha=$(curl --fail --silent --show-error --max-time 20 --retry 2 --retry-delay 2 --retry-max-time 70 --header "Authorization: Bearer $CURRENT_MAIN_TOKEN" "https://api.github.com/repos/$REPOSITORY/commits/main" | jq -er .sha)
           test "$current_sha" = "$EXPECTED_SHA"
       - name: Deploy
         id: deployment

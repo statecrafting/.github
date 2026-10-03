@@ -1,10 +1,10 @@
 {
   "inputs": {
     ".github/workflows/pages.yml": {
-      "contentHash": "ada25fca34652b55497e9249cd97475839491e30e00a435dc783d6d819818369"
+      "contentHash": "8f8012bdce7531b009792d1cd035abaeb284a718a4c263ea672fbb8b4fc6f693"
     },
     ".github/workflows/verify.yml": {
-      "contentHash": "3799651ad419d9edae58b45659724a424d5ff7a31cde2ae68e66ba118106bd4c"
+      "contentHash": "7ee1e063328bd84317b62b9410f5bf31b67d3bc90c60946baf59969e0334c86f"
     },
     ".gitignore": {
       "contentHash": "98a818a7b996c527955c4f398b3024c4b6e000cbfa59f153747adf0358242ad5"
@@ -82,7 +82,7 @@
       "contentHash": "2a68bc686c48eb36a556d030b15bf3d71afa19a6cc5ad745283305278c2db4b4"
     },
     "docs/public-frontend-adoption.md": {
-      "contentHash": "65a18ab7464b4b0d95941903c5c7eda66570b82f6c4e741dd036eeac451ac63b"
+      "contentHash": "02fd5290cf7245f872bb5ccff9a610abb509b62e8b6a70129713a6ee810799c4"
     },
     "package-lock.json": {
       "contentHash": "33485a5be252fa866722e990cd3403c90996513ace5a9c90d265dc77a224041d"
@@ -109,7 +109,7 @@
       "contentHash": "b0ba9d1c2d4c6e5ccaf5f5d312804277b14a660e1438178b68438d923d714ea1"
     },
     "scripts/catalog/export.mjs": {
-      "contentHash": "5a1781380f8feb5925d20d9d0fa7ef2a5b5c6d9b2cd3ba78da944f6b2bcf8961"
+      "contentHash": "42d28e78bf532ad31ecfe6623b1c55da6537d63c2746c2f28a1423573d6fa280"
     },
     "scripts/catalog/model.mjs": {
       "contentHash": "af85b4bd0598eddff61f109e58032010bd32e0ae20beeed04bac2fa358acd4c3"

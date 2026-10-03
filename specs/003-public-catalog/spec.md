@@ -7,6 +7,8 @@ created: "2026-10-03"
 summary: "Deterministic public-source exports through supported pinned spec-spine commands, preserving provenance and authority limits."
 depends_on:
   - "000-bootstrap"
+extends:
+  - { spec: "000-bootstrap", unit: "docs/public-frontend-adoption.md", nature: "additive" }
 establishes:
   - "catalog/sources.json"
   - "catalog/schema.json"
@@ -24,6 +26,12 @@ judge. `catalog/sources.json` records an explicit public repository allowlist,
 immutable commit, required producer, observation date and required/optional
 corpus policy. A deliberate reviewed change refreshes pins; normal builds do
 not resolve moving branches or use the wall clock as payload input.
+
+Metadata visibility requests may use the workflow repository-scoped read-only
+token to avoid shared anonymous API limits. Independently require anonymous Git
+access for every source, disable credential helpers and global Git configuration,
+and remove the metadata token from source subprocess environments. Never grant
+private source access to the public build.
 
 At the pinned revision verify public accessibility and its declared producer
 requirement. Use that exact supported producer to check source freshness and
