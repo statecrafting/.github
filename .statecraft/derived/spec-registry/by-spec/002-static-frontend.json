@@ -46,10 +46,10 @@
     "implementation": "complete",
     "sectionDigests": {
       "1-architecture-and-routes": "07075b89064bea7a0e327162c8d92217fc628bf1181ac94757c6d89926bd99f9",
-      "2-honest-content": "3b5b289f19a84f346a9035a638a588d42492c68a6987025f39f0c2c53a8b41d3",
+      "2-honest-content": "06f82e35765df4b40f4d993e3cc70afa17246c6272af7b8e0b8eddee9a5269ad",
       "3-route-integrity-and-acceptance": "9052dc81f70a922cd13423dc8c9191780e6b1b0d09b5ec310ef1b1b2b9a43b9c",
-      "owner-ratification": "a39aa95958af671f708afd42a369e21fc79cbb80e572b5f68ceb6b250da7ac99",
-      "static-public-frontend-and-reading-surfaces": "1dffa53d00bd1076ace92037bc7608048b1c7ab0cacf3ca8986408c5e78f6df5"
+      "owner-ratification": "4b85a2ef00fccf09fc1bb8d9461f603c91d470debe4fc2a7fbe716608d52c703",
+      "static-public-frontend-and-reading-surfaces": "f05a98829b178713ad8326d55bd1ae02e36632c08278a10c217c2bd1ad3ba39b"
     },
     "sectionHeadings": [
       "Static public frontend and reading surfaces",
@@ -63,6 +63,6 @@
     "summary": "A static accessible website with current claims, catalog routes, reading controls, themes and architecture explanations.",
     "title": "Static public frontend and reading surfaces"
   },
-  "shardHash": "4dec1bd7ed6d979fc4055137059b3925fc4c7ee31445309c34a03dcaf0ef4304",
+  "shardHash": "fe25bb67d15a3427bb04fc76efb4ef08b07fe02b8a564c04eeb6331cf129a148",
   "specVersion": "1.9.0"
 }

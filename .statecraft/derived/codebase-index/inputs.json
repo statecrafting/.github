@@ -19,7 +19,7 @@
       "contentHash": "25c8e03152c897a0b333ef71535dba6b11add2b9f3dcb55250d723999cc26c4c"
     },
     "app/components/architecture.tsx": {
-      "contentHash": "f0b3a4cf3d9fbd467a3a3cb0050fa44dec223cd1d62208992e94aecc7d05303d"
+      "contentHash": "850cf9c919018ad851e25c514a1c31ca3302515d6f58ef66d682b3e02ff0d716"
     },
     "app/components/reader.tsx": {
       "contentHash": "e00db9090d1240996f81c62bfff804b3851a36164070f7d9ff61825b710c7bc7"
@@ -34,7 +34,7 @@
       "contentHash": "2c66b89179a5c6954dbfa95a3cddab11a3fa40521514fcb1009772fafc6b3032"
     },
     "app/lib/reading.ts": {
-      "contentHash": "5a309b48c7d47352671c89806df6a7eeadd6708860b88f797948601ce2a08706"
+      "contentHash": "443c6dd2ba685bff4da21457b73e504295cc49108c84a8581b78143e45ae4dae"
     },
     "app/root.tsx": {
       "contentHash": "7e8bbf655eb15438303ede29b247065a286e0c1fffec2f8c2fe8a9d3f0102c59"
@@ -64,7 +64,7 @@
       "contentHash": "484eca93d7e315c72989d810cc8280b4cc3567214aae60b8fd177fd07a2d321c"
     },
     "app/routes/products.tsx": {
-      "contentHash": "aae73c39133b1f1a3562de749322b7bbede50ea0f4981395b317fe8f6cae10e8"
+      "contentHash": "51e2ff7872e3f0b4edf8f41219a6b110258478675bbf820a7be5e59fab21d04d"
     },
     "app/routes/registry.tsx": {
       "contentHash": "ae201694a87d325e5acecb50dfb7cc06785bad1a5c05cb0649332b8aad959ec2"
@@ -79,10 +79,10 @@
       "contentHash": "986c847d20e3e10389bbe7705dd1660dc6926a2992bfaf45268b66f0829ffc86"
     },
     "catalog/sources.json": {
-      "contentHash": "2a68bc686c48eb36a556d030b15bf3d71afa19a6cc5ad745283305278c2db4b4"
+      "contentHash": "a35212eb45ab6d14feb5b287a104de4ef98747425fa927a2dfd7bbc0b27c051d"
     },
     "docs/public-frontend-adoption.md": {
-      "contentHash": "2f8366fc0107f48f2bc63accbc5c1fc80adda803887f85f987577286c342a29a"
+      "contentHash": "d71f8bf8dacf9a6480ba1c1a82fd437a797c161cb2988b44cfce249e44e3ea76"
     },
     "package-lock.json": {
       "contentHash": "33485a5be252fa866722e990cd3403c90996513ace5a9c90d265dc77a224041d"
@@ -94,7 +94,7 @@
       "contentHash": "e6e3cd8e16be9ff873d35d81abe4734d01be927c94b4f0184696f16797dfe1fb"
     },
     "profile/README.md": {
-      "contentHash": "1c3f029ba5549b1e98c7ea169155ace120a5a9d6dac6446b49ac1305af4c6614"
+      "contentHash": "e58bab3a06344c22e737d70b1caf9507093b85acd76d3a54d0ed1a3a9a811c9e"
     },
     "public/CNAME": {
       "contentHash": "844481f2350ddec85ac24089e2d583e111439b862cee617d8135643426358f81"

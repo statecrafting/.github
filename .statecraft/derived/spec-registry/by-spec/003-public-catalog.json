@@ -35,12 +35,12 @@
     "id": "003-public-catalog",
     "implementation": "complete",
     "sectionDigests": {
-      "1-source-authority": "e073c397bf5b7e6826ad058859d70a6cd18f02a07a56266d4ff3aad1e7956460",
+      "1-source-authority": "a6443cf98cb1322768684416f188c2852199347b09f3313cd2803e9ce4336d99",
       "2-presentation-schema": "51b29515daae0323ac65bd7d49cc59e522d80441dcc8728d37175b7ee2108208",
       "3-private-platform-publication": "1d6e77f072294b7e968f653284d1677f94e966f8e1bec9fd9e02f3b71b68ba90",
       "4-acceptance": "e129ba540f61de8e5dc715c9efc089ec646e0b07461ad361b26c1bbebd4e335d",
-      "owner-ratification": "7c855842c3970ab76ef4f037af95ffa6be5af6ba29219c2c4d95e2ce7baf24bb",
-      "pinned-public-catalog-ingestion-and-publication-boundary": "8a37036e5faf7102b10a938d43fb57453385004f4bd08d8c6db4d3fdb54760af"
+      "owner-ratification": "44d3d9a0716d7c6f88b6bc28443106170324a66fcab081d27dda7cfb490dc7e5",
+      "pinned-public-catalog-ingestion-and-publication-boundary": "877b9cdcc7bd2426884147516857c891f3461a5c8f378f312dc64f4d2b8c8cdf"
     },
     "sectionHeadings": [
       "Pinned public catalog ingestion and publication boundary",
@@ -55,6 +55,6 @@
     "summary": "Deterministic public-source exports through supported pinned spec-spine commands, preserving provenance and authority limits.",
     "title": "Pinned public catalog ingestion and publication boundary"
   },
-  "shardHash": "54ae2e549d3f197fdffe8ca011573c8a9a3d426a2a55c25553386aac480a3af1",
+  "shardHash": "ed7aa8dd6ddc67f6a8c2ccfc425e6e8ced5ba4c145000378d4fc861e65571007",
   "specVersion": "1.9.0"
 }

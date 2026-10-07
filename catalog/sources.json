@@ -74,33 +74,6 @@
       "description": "Register projects, inspect configuration and drive governed local work."
     },
     {
-      "repository": "statecrafting/tenant-emit",
-      "revision": "fe85c3a2c33189e2c02bccef78b06328dc67b414",
-      "producer": "0.28.0",
-      "observedAt": "2026-10-03",
-      "required": true,
-      "role": "Artifact emission",
-      "description": "Emit run-side artifacts for independent verification."
-    },
-    {
-      "repository": "statecrafting/tenant-tail",
-      "revision": "229a611f53e8aa481cbde8178f7b9a4b8804d3fe",
-      "producer": "0.28.0",
-      "observedAt": "2026-10-03",
-      "required": true,
-      "role": "Independent verification",
-      "description": "Recheck emitted artifacts without trusting their producer."
-    },
-    {
-      "repository": "statecrafting/trust-window",
-      "revision": "33f0dd2dcc4e199b45e4f7b2d63474c726c4a8f7",
-      "producer": "0.28.0",
-      "observedAt": "2026-10-03",
-      "required": true,
-      "role": "Graduated trust",
-      "description": "Score weighted samples over a rolling window."
-    },
-    {
       "repository": "statecrafting/wire-witness",
       "revision": "9e8c647676f1898643c7cd2c301f6bb339db1bd5",
       "producer": "0.28.0",

@@ -42,6 +42,8 @@ republish the archived paper under its historical author/date while changing
 its substance. Do not import its private links, authentication infrastructure,
 Encore-era promises, fabricated counts or complete-to-shipped status ladder.
 Use one current public roster shared by products, navigation and content.
+Retired repositories leave the roster and current copy, including capability
+descriptions whose only public source was a retired repository.
 Skeletal repositories may be labeled early repositories without corpus claims.
 
 Catalog data comes only from the normalized presentation payload specified in
@@ -65,3 +67,4 @@ the deploy artifact.
 Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
 `statecraft.ing` frontend. Implementation, verification and deployment evidence
 remain separate from this approval.
+The 2026-10-07 repository retirement amendment awaits owner ratification.

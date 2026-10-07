@@ -27,6 +27,12 @@ immutable commit, required producer, observation date and required/optional
 corpus policy. A deliberate reviewed change refreshes pins; normal builds do
 not resolve moving branches or use the wall clock as payload input.
 
+A repository retired from the platform family leaves the allowlist in a
+reviewed change; it is not kept as an optional or unpinned source. The
+2026-10-07 retirement of `tenant-emit`, `tenant-tail`, `trust-window`,
+`chancery`, `fact-fold`, `hqgit` and `statecraft-setup-acceptance-20260924`
+is recorded in `docs/public-frontend-adoption.md`.
+
 Metadata visibility requests may use the workflow repository-scoped read-only
 token to avoid shared anonymous API limits. Independently require anonymous Git
 access for every source, disable credential helpers and global Git configuration,
@@ -81,3 +87,4 @@ public inputs and cannot silently substitute an older payload on failure.
 Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
 `statecraft.ing` frontend. Implementation, verification and deployment evidence
 remain separate from this approval.
+The 2026-10-07 repository retirement amendment awaits owner ratification.
