@@ -20,6 +20,7 @@ links `https://statecraft.ing`, and links only accessible public resources.
 Use the current public roster and pinned source evidence recorded in
 `docs/public-frontend-adoption.md`. The private Statecraft platform may be
 mentioned as private without a misleading public-source link or delivery claim.
+Retired repositories are not presented as family members or current resources.
 Do not include login, hosted-service availability, generated counts or invented
 qualification. Render correctly on GitHub without custom scripts or CSS.
 
@@ -34,3 +35,4 @@ over valid HTTPS. Profile completion does not ratify the other specs.
 Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
 `statecraft.ing` frontend. Implementation, verification and deployment evidence
 remain separate from this approval.
+The 2026-10-07 repository retirement amendment awaits owner ratification.
