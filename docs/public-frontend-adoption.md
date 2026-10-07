@@ -65,9 +65,10 @@ and draft 006 are design evidence, not approvals in this repository.
 
 These immutable public revisions were observed on 2026-10-03. Each non-skeletal
 corpus declares exact spec-spine 0.28.0. These pins define the initial export snapshot. Export freshness does not establish
-verified implementation. All have Apache-2.0 except
-chancery, whose API license metadata is absent. Confirm source license files
-before any code reuse; descriptions alone do not grant a license.
+verified implementation. All have Apache-2.0 API license metadata. Confirm
+source license files before any code reuse; descriptions alone do not grant a
+license. Repositories retired on 2026-10-07 are removed from this table; see
+the retirement record below.
 
 | Public repository | Immutable revision | Initial catalog policy |
 | --- | --- | --- |
@@ -78,15 +79,11 @@ before any code reuse; descriptions alone do not grant a license.
 | [rustev](https://github.com/statecrafting/rustev/tree/1c713a61033279ce9b81d11d683bdf551f7a3769) | `1c713a61033279ce9b81d11d683bdf551f7a3769` | Required supported-read export |
 | [wire-witness](https://github.com/statecrafting/wire-witness/tree/9e8c647676f1898643c7cd2c301f6bb339db1bd5) | `9e8c647676f1898643c7cd2c301f6bb339db1bd5` | Required supported-read export |
 | [action-gate](https://github.com/statecrafting/action-gate/tree/6cfa81efb0426d2c4242e2919b58180ec3b384ea) | `6cfa81efb0426d2c4242e2919b58180ec3b384ea` | Required supported-read export |
-| [tenant-emit](https://github.com/statecrafting/tenant-emit/tree/fe85c3a2c33189e2c02bccef78b06328dc67b414) | `fe85c3a2c33189e2c02bccef78b06328dc67b414` | Required supported-read export |
-| [tenant-tail](https://github.com/statecrafting/tenant-tail/tree/229a611f53e8aa481cbde8178f7b9a4b8804d3fe) | `229a611f53e8aa481cbde8178f7b9a4b8804d3fe` | Required supported-read export |
-| [trust-window](https://github.com/statecrafting/trust-window/tree/33f0dd2dcc4e199b45e4f7b2d63474c726c4a8f7) | `33f0dd2dcc4e199b45e4f7b2d63474c726c4a8f7` | Required supported-read export |
 | [attest-ledger](https://github.com/statecrafting/attest-ledger/tree/a6b3eac8aa9ae2d9f2329c687f818d10c82cc565) | `a6b3eac8aa9ae2d9f2329c687f818d10c82cc565` | Required supported-read export |
 | [canonical-keysort-json](https://github.com/statecrafting/canonical-keysort-json/tree/920eb173da928b70cdc96c66d98cd85ac5dfd91d) | `920eb173da928b70cdc96c66d98cd85ac5dfd91d` | Required supported-read export |
 | [doc-manus](https://github.com/statecrafting/doc-manus/tree/a79fca85a5cc0f9cc43f70e85e8af92803c73599) | `a79fca85a5cc0f9cc43f70e85e8af92803c73599` | Outside required corpus; early repository |
-| [chancery](https://github.com/statecrafting/chancery/tree/6bd54a6f4d1414f7abba015b2483751b50882dee) | `6bd54a6f4d1414f7abba015b2483751b50882dee` | Outside required corpus; early repository |
 
-The public setup-acceptance fixture is not a family product. Private sources are
+Retired fixtures and repositories are not family products. Private sources are
 excluded. The private platform remains private and is not linked as accessible
 source. Its selected publication contract requires a separate owner decision;
 the public site can ship without it or full platform cell qualification.
@@ -98,6 +95,18 @@ Witness provides evidence rather than acceptance authority. Public libraries
 are not automatically deployed services. Early repository descriptions do not
 establish implemented products. Refresh claims against the selected immutable
 revision at implementation time, and retain unknown evidence explicitly.
+
+## Repository retirement record
+
+Decided 2026-10-07: `tenant-emit`, `tenant-tail`, `trust-window`, `chancery`,
+`fact-fold`, `hqgit` and `statecraft-setup-acceptance-20260924` are retired
+from the Statecraft platform family. They are being archived on GitHub, with
+their history preserved in the private `statecrafting/statecraft-archive`. Decision:
+remove them from the catalog allowlist, the public source inventory, the
+organization profile and the website copy. The required corpus keeps the
+remaining nine public sources at their 2026-10-03 pins. Rustev, doc-manus and
+butler-ai are not part of this decision. Earlier evidence and receipts below
+describe the twelve-source snapshot as it was observed and remain unchanged.
 
 ## Owner checkpoint and delivery sequence
 
