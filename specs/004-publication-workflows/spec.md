@@ -58,3 +58,12 @@ artifact and verification passed.
 Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
 `statecraft.ing` frontend. Implementation, verification and deployment evidence
 remain separate from this approval.
+
+## Amendment 2026-11-07: producer installation
+
+This repository pins spec-spine 0.32.0. The installer places each producer the
+catalog declares (0.31.0 and 0.32.0) under `.bin/spec-spine-<version>` and the
+repository's own producer as `.bin/spec-spine`, verifying each archive against
+its published release checksum and each binary's reported version. Workflow
+steps are unchanged. Ratified by Bart on 2026-11-07. Implementation, verification and deployment
+evidence remain separate from this approval.

@@ -45,20 +45,22 @@
     "sectionDigests": {
       "1-verification": "777344ccbc8aa5350fb0a7003bb3826ce02c031675f35e644f80ea5b42a0d19f",
       "2-deployment": "85d5033edb0fe0b8c0b39400130b20a61df06bb2647df5d52e3c6ff19b1767dc",
-      "owner-ratification": "c998fe1e62934f6bf1c285bf3e2a42ba034b8da88c7a55f686dbe663372c935c",
-      "verification-and-github-pages-publication": "c97a6a6208fd0ec037ac9f27e38cd3f86da7bff99869bdc1bb3a1809db6b6cfc"
+      "amendment-2026-11-07-producer-installation": "83c36b0065ddd65395784465f643111acf15ade171af562b9666d38fa964a9a2",
+      "owner-ratification": "5d05be0edc7a0426ed803228dbb8f8b7ab45d8671a6212d0c3d38fde82859034",
+      "verification-and-github-pages-publication": "7816efa010ee06e660ca7604e18b6afe4d08f92f4d1bb800503df3b8c729f7e1"
     },
     "sectionHeadings": [
       "Verification and GitHub Pages publication",
       "1. Verification",
       "2. Deployment",
-      "Owner ratification"
+      "Owner ratification",
+      "Amendment 2026-11-07: producer installation"
     ],
     "specPath": "specs/004-publication-workflows/spec.md",
     "status": "approved",
     "summary": "Reproducible least-permission verification and single-publisher Pages deployment to the custom domain.",
     "title": "Verification and GitHub Pages publication"
   },
-  "shardHash": "f6d15cb2335a10b8ad20c79f961dbf53c93769c4dba86c7432932b8586e894dc",
-  "specVersion": "1.9.0"
+  "shardHash": "4750c70e06ac8ff88200f9881b09f54dc80d3032a46f25f072e8914bc51fbf02",
+  "specVersion": "1.11.0"
 }

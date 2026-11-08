@@ -48,21 +48,23 @@
       "1-architecture-and-routes": "07075b89064bea7a0e327162c8d92217fc628bf1181ac94757c6d89926bd99f9",
       "2-honest-content": "06f82e35765df4b40f4d993e3cc70afa17246c6272af7b8e0b8eddee9a5269ad",
       "3-route-integrity-and-acceptance": "9052dc81f70a922cd13423dc8c9191780e6b1b0d09b5ec310ef1b1b2b9a43b9c",
-      "owner-ratification": "4b85a2ef00fccf09fc1bb8d9461f603c91d470debe4fc2a7fbe716608d52c703",
-      "static-public-frontend-and-reading-surfaces": "f05a98829b178713ad8326d55bd1ae02e36632c08278a10c217c2bd1ad3ba39b"
+      "amendment-2026-11-07-re-pinned-snapshot-copy": "c1b05f4c810876e4308c65d19757308945bf1c6a0d5ace46eaad6d1ddb623a25",
+      "owner-ratification": "acf0222cd0f70c5d897963bdcb5c623040877792f9c4d17d327a708d15aee211",
+      "static-public-frontend-and-reading-surfaces": "8e17969e638bae5ae28f518c0375494376855f63eabecb0252e71b59c6892bf5"
     },
     "sectionHeadings": [
       "Static public frontend and reading surfaces",
       "1. Architecture and routes",
       "2. Honest content",
       "3. Route integrity and acceptance",
-      "Owner ratification"
+      "Owner ratification",
+      "Amendment 2026-11-07: re-pinned snapshot copy"
     ],
     "specPath": "specs/002-static-frontend/spec.md",
     "status": "approved",
     "summary": "A static accessible website with current claims, catalog routes, reading controls, themes and architecture explanations.",
     "title": "Static public frontend and reading surfaces"
   },
-  "shardHash": "fe25bb67d15a3427bb04fc76efb4ef08b07fe02b8a564c04eeb6331cf129a148",
-  "specVersion": "1.9.0"
+  "shardHash": "351af69b1ff80ec61f1d224164a51b35cfb4ed7482711dfe3e666a06ff217fa9",
+  "specVersion": "1.11.0"
 }

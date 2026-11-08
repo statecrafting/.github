@@ -95,6 +95,6 @@
     "specId": "003-public-catalog",
     "specStatus": "approved"
   },
-  "schemaVersion": "1.2.0",
-  "shardHash": "ed7aa8dd6ddc67f6a8c2ccfc425e6e8ced5ba4c145000378d4fc861e65571007"
+  "schemaVersion": "1.3.0",
+  "shardHash": "db6ea036c5ff85beb187464b4bda1af1ca79978793a4229602bdd8591a93f7f6"
 }

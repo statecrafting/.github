@@ -27,6 +27,6 @@
     "specId": "001-organization-profile",
     "specStatus": "approved"
   },
-  "schemaVersion": "1.2.0",
-  "shardHash": "60b518f9627fd048553c4ef7e0358fbef3820484d14135691726de32bcc07cdb"
+  "schemaVersion": "1.3.0",
+  "shardHash": "744cb7c90cd462153cb95a56cd2b6688ba897fe76f7c683f1586694388c98902"
 }

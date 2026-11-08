@@ -87,4 +87,17 @@ public inputs and cannot silently substitute an older payload on failure.
 Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
 `statecraft.ing` frontend. Implementation, verification and deployment evidence
 remain separate from this approval.
-The 2026-10-07 repository retirement amendment awaits owner ratification.
+The 2026-10-07 repository retirement amendment was ratified by Bart on 2026-11-07.
+
+## Amendment 2026-11-07: re-pin and per-source producers
+
+`catalog/sources.json` moves every required source to its default-branch tip
+observed on 2026-11-07, as recorded in `docs/public-frontend-adoption.md`.
+Each source declares an exact released producer, 0.31.0 or 0.32.0, and a
+released engine refuses a corpus pinned to another release. The exporter
+therefore resolves one binary per declared producer and checks each source
+with exactly that producer; the presentation schema admits those two producer
+values. Relationship identities are recorded once per specification even when
+a source declares several partial edges to it. spec-spine 0.32.0 publishes a
+`content` verb; adopting it remains a separately reviewed change. Ratified by Bart on 2026-11-07. Implementation, verification and deployment
+evidence remain separate from this approval.
