@@ -39,8 +39,9 @@
       "2-presentation-schema": "51b29515daae0323ac65bd7d49cc59e522d80441dcc8728d37175b7ee2108208",
       "3-private-platform-publication": "1d6e77f072294b7e968f653284d1677f94e966f8e1bec9fd9e02f3b71b68ba90",
       "4-acceptance": "e129ba540f61de8e5dc715c9efc089ec646e0b07461ad361b26c1bbebd4e335d",
-      "owner-ratification": "44d3d9a0716d7c6f88b6bc28443106170324a66fcab081d27dda7cfb490dc7e5",
-      "pinned-public-catalog-ingestion-and-publication-boundary": "877b9cdcc7bd2426884147516857c891f3461a5c8f378f312dc64f4d2b8c8cdf"
+      "amendment-2026-11-07-re-pin-and-per-source-producers": "cdec451e459cb0f60be75649090d8290199d6b46a5692264922d4eff4705d138",
+      "owner-ratification": "1818e7a534ce61f799488c4b5f0c1f2bd4cddecd8a5322ddc8d78b46daa8151f",
+      "pinned-public-catalog-ingestion-and-publication-boundary": "1364dd7c185a6208354b7452ff198daf64c54254a781ea4103f8ab41408290aa"
     },
     "sectionHeadings": [
       "Pinned public catalog ingestion and publication boundary",
@@ -48,13 +49,14 @@
       "2. Presentation schema",
       "3. Private-platform publication",
       "4. Acceptance",
-      "Owner ratification"
+      "Owner ratification",
+      "Amendment 2026-11-07: re-pin and per-source producers"
     ],
     "specPath": "specs/003-public-catalog/spec.md",
     "status": "approved",
     "summary": "Deterministic public-source exports through supported pinned spec-spine commands, preserving provenance and authority limits.",
     "title": "Pinned public catalog ingestion and publication boundary"
   },
-  "shardHash": "ed7aa8dd6ddc67f6a8c2ccfc425e6e8ced5ba4c145000378d4fc861e65571007",
-  "specVersion": "1.9.0"
+  "shardHash": "db6ea036c5ff85beb187464b4bda1af1ca79978793a4229602bdd8591a93f7f6",
+  "specVersion": "1.11.0"
 }

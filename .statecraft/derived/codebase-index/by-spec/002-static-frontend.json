@@ -167,6 +167,6 @@
     "specId": "002-static-frontend",
     "specStatus": "approved"
   },
-  "schemaVersion": "1.2.0",
-  "shardHash": "fe25bb67d15a3427bb04fc76efb4ef08b07fe02b8a564c04eeb6331cf129a148"
+  "schemaVersion": "1.3.0",
+  "shardHash": "351af69b1ff80ec61f1d224164a51b35cfb4ed7482711dfe3e666a06ff217fa9"
 }

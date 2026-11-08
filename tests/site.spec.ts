@@ -4,6 +4,7 @@ import type { Catalog } from '../app/lib/catalog';
 const catalog = JSON.parse(readFileSync('public/data/catalog.json','utf8')) as Catalog;
 const source=catalog.sources.find(s=>s.repository==='statecrafting/spec-spine')!;
 const spec=source.specs.find(s=>s.anchors.length>0)!;
+const matching=catalog.sources.filter(s=>s.specs.some(spec=>`${s.repository.split('/')[1]} ${spec.id} ${spec.title} ${spec.summary}`.toLowerCase().includes('statecraft-cli')));
 test('landing has no external runtime requests or hydration failures',async({page})=>{
  const external:string[]=[];const errors:string[]=[];
  page.on('request',r=>{if(new URL(r.url()).origin!=='http://127.0.0.1:4173')external.push(r.url());});
@@ -14,7 +15,7 @@ test('landing has no external runtime requests or hydration failures',async({pag
 });
 test('catalog search, empty state and lifecycle filtering work',async({page})=>{
  await page.goto('/registry');await page.getByRole('searchbox').fill('no-such-specification-zzzz');await expect(page.getByRole('heading',{name:'No specifications match.'})).toBeVisible();
- await page.getByRole('button',{name:'Clear filters'}).click();await page.getByRole('searchbox').fill('statecraft-cli');await expect(page.getByRole('status')).toContainText('3 repositories');
+ await page.getByRole('button',{name:'Clear filters'}).click();await page.getByRole('searchbox').fill('statecraft-cli');await expect(page.getByRole('status')).toContainText(`${matching.length} repositories`);
  await page.getByLabel('Declared lifecycle').selectOption('draft');const badges=page.locator('.status').filter({hasText:'Lifecycle'});for(const badge of await badges.all())await expect(badge).toContainText('draft');
 });
 test('detail deep link preserves provenance, anchors and distinct states',async({page})=>{

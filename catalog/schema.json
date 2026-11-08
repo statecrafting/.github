@@ -36,7 +36,10 @@
             "pattern": "^[a-f0-9]{40}$"
           },
           "producer": {
-            "const": "0.28.0"
+            "enum": [
+              "0.31.0",
+              "0.32.0"
+            ]
           },
           "observedAt": {
             "type": "string",

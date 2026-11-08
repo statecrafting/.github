@@ -11,7 +11,7 @@
 # binary, so two versions can judge the same diff differently.
 # Cargo semantics: a bare version is a caret range, `=` is exact. This
 # pin is exact: it names the spec-spine release that produced this file.
-required_version = "=0.28.0"
+required_version = "=0.32.0"
 
 [manifest]
 # Drives the Cargo `[package.metadata.spec-spine].spec` and package.json `"spec-spine".spec` reads.

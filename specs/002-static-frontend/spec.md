@@ -67,4 +67,15 @@ the deploy artifact.
 Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
 `statecraft.ing` frontend. Implementation, verification and deployment evidence
 remain separate from this approval.
-The 2026-10-07 repository retirement amendment awaits owner ratification.
+The 2026-10-07 repository retirement amendment was ratified by Bart on 2026-11-07.
+
+## Amendment 2026-11-07: re-pinned snapshot copy
+
+The landing page reads the pinned producer versions and observation dates from
+the catalog payload instead of literals. Getting-started copy names the
+producer the spec-spine source declares. Catalog documentation states nine
+pinned repositories, the per-source producer and the 2026-11-07 observation
+date, and no longer describes a selected-content command as absent from the
+released producer. The browser search check derives its expected repository
+count from the payload. Ratified by Bart on 2026-11-07. Implementation, verification and deployment
+evidence remain separate from this approval.

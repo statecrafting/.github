@@ -64,7 +64,8 @@ and draft 006 are design evidence, not approvals in this repository.
 ## Public source inventory
 
 These immutable public revisions were observed on 2026-10-03. Each non-skeletal
-corpus declares exact spec-spine 0.28.0. These pins define the initial export snapshot. Export freshness does not establish
+corpus declares exact spec-spine 0.28.0. These pins define the initial export snapshot;
+the re-pin record below describes the current one. Export freshness does not establish
 verified implementation. All have Apache-2.0 API license metadata. Confirm
 source license files before any code reuse; descriptions alone do not grant a
 license. Repositories retired on 2026-10-07 are removed from this table; see
@@ -100,13 +101,44 @@ revision at implementation time, and retain unknown evidence explicitly.
 
 Decided 2026-10-07: `tenant-emit`, `tenant-tail`, `trust-window`, `chancery`,
 `fact-fold`, `hqgit` and `statecraft-setup-acceptance-20260924` are retired
-from the Statecraft platform family. They are being archived on GitHub, with
-their history preserved in the private `statecrafting/statecraft-archive`. Decision:
+from the Statecraft platform family. As of 2026-11-07, `hqgit` is archived as a
+private repository and the others no longer exist as public repositories;
+their histories are preserved in the private `statecrafting/statecraft-archive`. Decision:
 remove them from the catalog allowlist, the public source inventory, the
 organization profile and the website copy. The required corpus keeps the
 remaining nine public sources at their 2026-10-03 pins. Rustev, doc-manus and
 butler-ai are not part of this decision. Earlier evidence and receipts below
 describe the twelve-source snapshot as it was observed and remain unchanged.
+
+## Re-pin record, 2026-11-07
+
+Observed 2026-11-07. Recorded as amendments to specs 002, 003 and 004,
+ratified by the owner on 2026-11-07 (see the owner checkpoint below). The nine required sources move to the
+tip of each default branch as observed on that date. Each corpus now declares
+an exact released spec-spine producer of 0.31.0 or 0.32.0, and a released
+engine refuses a corpus pinned to another release, so the exporter runs the
+exact producer each source declares; the manifest records it per source. This
+repository's own pin moves from 0.28.0 to 0.32.0. The release checksums in the
+installer are the published `.tar.gz.sha256` sidecars of v0.31.0 and v0.32.0.
+
+| Public repository | Immutable revision | Declared producer | Specifications |
+| --- | --- | --- | --- |
+| [action-gate](https://github.com/statecrafting/action-gate/tree/d0f73232b99e6896104ce1a2e18a82606d3c6339) | `d0f73232b99e6896104ce1a2e18a82606d3c6339` | 0.31.0 | 5 |
+| [aicortex](https://github.com/statecrafting/aicortex/tree/4ff5a48d63860a5915994d2f3ded894165a1976e) | `4ff5a48d63860a5915994d2f3ded894165a1976e` | 0.32.0 | 49 |
+| [attest-ledger](https://github.com/statecrafting/attest-ledger/tree/2f4b4e36f90d2ee4778695d3c8401a8e0cb517f7) | `2f4b4e36f90d2ee4778695d3c8401a8e0cb517f7` | 0.31.0 | 3 |
+| [canonical-keysort-json](https://github.com/statecrafting/canonical-keysort-json/tree/c7e1ac88176f5e90cfc04f6695aa952bef196a0f) | `c7e1ac88176f5e90cfc04f6695aa952bef196a0f` | 0.31.0 | 2 |
+| [rahi](https://github.com/statecrafting/rahi/tree/b510259e57d0f7aa4eb3903ba2ebc121932f3232) | `b510259e57d0f7aa4eb3903ba2ebc121932f3232` | 0.32.0 | 38 |
+| [rustev](https://github.com/statecrafting/rustev/tree/a26ec07182547fec60b89e2cc7873d34a5b8c3a0) | `a26ec07182547fec60b89e2cc7873d34a5b8c3a0` | 0.32.0 | 67 |
+| [spec-spine](https://github.com/statecrafting/spec-spine/tree/1d01cb4aa94772cd83a6903c9e18f59b8e3aacaf) | `1d01cb4aa94772cd83a6903c9e18f59b8e3aacaf` | 0.32.0 | 209 |
+| [statecraft-cli](https://github.com/statecrafting/statecraft-cli/tree/f133913a98ceaa58ff47de1e628989022aff28ab) | `f133913a98ceaa58ff47de1e628989022aff28ab` | 0.32.0 | 73 |
+| [wire-witness](https://github.com/statecrafting/wire-witness/tree/2a638d4657a88863c7c07bef2701937d16971638) | `2a638d4657a88863c7c07bef2701937d16971638` | 0.31.0 | 18 |
+
+Two local exports from these pins are byte-identical and contain 464
+specifications from nine immutable public revisions. One source declares two
+partial `supersedes` edges to the same specification; the payload records
+each relationship identity once. spec-spine 0.32.0 publishes a `content`
+verb; the catalog does not adopt it in this change. These are local results;
+hosted CI and live delivery require separate receipts.
 
 ## Owner checkpoint and delivery sequence
 
@@ -115,6 +147,11 @@ The owner ratified specs 000-bootstrap, 001-organization-profile,
 2026-10-03 for delivery of the public frontend. All now have `status: approved`;
 implementation was pending at ratification (bootstrap is `n-a`). Private export publication
 remains outside these contracts.
+
+On 2026-11-07 the owner ratified the 2026-10-07 repository retirement
+amendment in specs 001, 002 and 003, and the 2026-11-07 re-pin amendments in
+specs 002, 003 and 004. Lifecycle fields are unchanged. Implementation,
+verification and deployment evidence remain separate from these approvals.
 
 After ratification: implement static routes/readers, pinned ingestion and
 required-source refusal; add verification and Pages Actions; validate a preview

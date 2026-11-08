@@ -35,4 +35,4 @@ over valid HTTPS. Profile completion does not ratify the other specs.
 Ratified by Bart on 2026-10-03 for delivery of the public `.github` based
 `statecraft.ing` frontend. Implementation, verification and deployment evidence
 remain separate from this approval.
-The 2026-10-07 repository retirement amendment awaits owner ratification.
+The 2026-10-07 repository retirement amendment was ratified by Bart on 2026-11-07.

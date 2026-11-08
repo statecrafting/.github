@@ -15,8 +15,8 @@
     "sectionDigests": {
       "1-behavior": "eb676ae5348e447e406bd1e833e446122a067f06770864919e321a53a2580f83",
       "2-acceptance": "7d8eb4fac506e3fd0357222aaca37c5d1043138cad3a907763373603f9ef1925",
-      "owner-ratification": "b961b1ddff6e754cc967c9827c637a9f3189b795bfb50699b2b757e9c6a56a4c",
-      "public-organization-profile": "c7ef27e6ffe4cfc86048241b5cfa785a2ec15fec483fd8af7d19f9b90c1201e9"
+      "owner-ratification": "c24936410463693b4ac52615e0532f802fcde79d847ccf56139e935fc3ef8005",
+      "public-organization-profile": "824a1432de64ac92c19c130d27fad4416b21543d5d5bd367fd5125a19f82dd9d"
     },
     "sectionHeadings": [
       "Public organization profile",
@@ -29,6 +29,6 @@
     "summary": "An accessible public organization introduction linking the website and current public family resources.",
     "title": "Public organization profile"
   },
-  "shardHash": "60b518f9627fd048553c4ef7e0358fbef3820484d14135691726de32bcc07cdb",
-  "specVersion": "1.9.0"
+  "shardHash": "744cb7c90cd462153cb95a56cd2b6688ba897fe76f7c683f1586694388c98902",
+  "specVersion": "1.11.0"
 }
